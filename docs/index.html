@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Главная страница</title>
+	<meta name="keywords" content="food" />
+	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="stylesheet" href="./libs/css/animate.css" />
+	<link rel="stylesheet" href="./libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="./libs/css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="./libs/css/owl.theme.default.min.css" />
+</head>
+
+<body class="index">
+	<div class="page">
+		<header>
+			<section class="nav">
+				<div class="container">
+					<div class="nav-wrap"><a class="nav__logo" href="#">TakeMe</a>
+						<ul class="nav__links">
+							<li class="nav__links-item"><a class="nav__links-link" href="#">Locations</a></li>
+							<li class="nav__links-item"><a class="nav__links-link" href="#">Accommodation</a></li>
+							<li class="nav__links-item"><a class="nav__links-link" href="#">Travel Guides</a></li>
+							<li class="nav__links-item"><a class="nav__links-link" href="#">Where To Stay</a></li>
+							<li class="nav__links-item"><a class="nav__links-link" href="#">Contact Us</a></li>
+							<li class="nav__links-item"><a class="nav__links-link" href="#">Log In</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="header">
+				<div class="header__carousel-wrap">
+					<div class="header__carousel owl-carousel owl-theme">
+						<div class="header__carousel-item"><img src="./img/header-carousel/01.jpg" alt="01.jpg" /></div>
+						<div class="header__carousel-item"><img src="./img/header-carousel/02.jpg" alt="02.jpg" /></div>
+					</div>
+				</div>
+				<div class="header__form-wrap">
+					<div class="container">
+						<div class="header__form"></div>
+					</div>
+				</div>
+			</section>
+		</header>
+		<main> </main>
+		<footer></footer>
+	</div>
+	<script src="./libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/carousel.js"></script>
+	<script src="./libs/owlcarousel/owl.carousel.min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			new WOW().init();
+		});
+	</script>
+	<script src="./libs/wow/wow.min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.wow').attr('data-wow-duration', '1.5s');
+		});
+	</script>
+</body>
+
+</html>
