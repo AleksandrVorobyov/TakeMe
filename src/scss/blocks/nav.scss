@@ -1,9 +1,11 @@
 .nav {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 115px;
-  background: #fff;
-  box-shadow: 0 20px 0px #d7d7d7;
+  background: $bgWhite;
+  box-shadow: 0 20px 0px $boxShadow;
   display: flex;
   align-items: center;
   z-index: 500;

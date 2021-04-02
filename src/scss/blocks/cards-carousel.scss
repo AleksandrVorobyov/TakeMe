@@ -1,0 +1,212 @@
+.cards-carousel {
+  position: relative;
+  width: 100%;
+  padding: 75px 0;
+  box-shadow: 0 20px 0px $boxShadow;
+  margin-bottom: 20px;
+  z-index: 200;
+}
+
+.cards-carousel-item {
+  position: relative;
+  width: 370px;
+  height: 260px;
+  padding: 20px;
+
+  &:hover {
+    .cards-carousel-item__link {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.7;
+    }
+  }
+}
+
+.cards-carousel-item__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.cards-carousel-item__img::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(
+    0deg,
+    rgba(31, 37, 52, 0.5) 0%,
+    rgba(102, 102, 102, 0.5) 50%,
+    rgba(31, 37, 52, 0.5) 100%
+  );
+}
+
+.cards-carousel-item__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 180px;
+  height: 70px;
+  background: lightslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 6px double #fff;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(255, 255, 255);
+  line-height: 36px;
+  opacity: 0;
+  text-transform: uppercase;
+  transition: transform 0.3s linear, opacity 0.3s linear;
+  will-change: transform, opacity;
+  z-index: 100;
+
+  &:hover {
+    opacity: 0.9 !important;
+  }
+}
+
+.cards-carousel-item__info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.cards-carousel-item__info-visited {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cards-carousel-item__info-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cards-carousel__info-text-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(255, 255, 255);
+  line-height: 14px;
+}
+
+.cards-carousel__info-text-subtitle {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+}
+
+.cards-carousel__info-visited-quantity {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(255, 255, 255);
+  line-height: 14px;
+  text-align: right;
+}
+
+.cards-carousel-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-50%);
+}
+
+.cards-carousel-nav-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -80px;
+}
+
+.cards-carousel-nav-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -50px;
+}
+
+.cards-carousel-nav-btn {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px double transparent;
+  outline: none;
+  cursor: pointer;
+  transition: border 0.3s linear;
+  background: transparent;
+
+  &:hover {
+    border: 4px double rgb(134, 134, 134);
+  }
+}
+
+.cards-carousel__info-visited-raiting label:hover {
+  transform: scale(1.1);
+}
+
+.cards-carousel__info-visited-raiting:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.cards-carousel__info-visited-raiting:not(:checked) > label {
+  float: right;
+  width: 20px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 32px;
+  color: transparent;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.cards-carousel__info-visited-raiting:not(:checked) > label:before {
+  content: "★";
+}
+
+.cards-carousel__info-visited-raiting > input:checked ~ label {
+  color: #fa9d4c;
+}
+
+.cards-carousel__info-visited-raiting:not(:checked) > label:hover,
+.cards-carousel__info-visited-raiting:not(:checked) > label:hover ~ label {
+  color: #fa9d4c;
+}
+
+.cards-carousel__info-visited-raiting > input:checked + label:hover,
+.cards-carousel__info-visited-raiting > input:checked + label:hover ~ label,
+.cards-carousel__info-visited-raiting > input:checked ~ label:hover,
+.cards-carousel__info-visited-raiting > input:checked ~ label:hover ~ label,
+.cards-carousel__info-visited-raiting > label:hover ~ input:checked ~ label {
+  color: #fa9d4c;
+}
+
+.cards-carousel__info-visited-raiting > label:active {
+  position: relative;
+}

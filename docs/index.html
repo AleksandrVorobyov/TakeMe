@@ -32,25 +32,220 @@
 				</div>
 			</section>
 			<section class="header">
+				<div class="header__form-wrap">
+					<div class="container">
+						<div class="header__form-col">
+							<h1 class="header__form-title">Find Your Dream Vacation Location</h1>
+							<h4 class="header__form-subtitle">Search hundreds of locations from around the world and find your perfect vacation location.</h4>
+							<form class="header__form">
+								<input class="header__form-search" type="search" name="" placeholder="Country or ZIP code" />
+								<div class="header__form-dropdown-block">
+									<input class="header__form-dropdown" type="button" id="form-dropdown-transport" title="Transport" name="Transport-name" value="Transportation" /><svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
+										<path id="arrow_icn" class="cls-1" d="M751,570l5-3v-2.875l-5,3.019L746,564v3l5,3h0Z" transform="translate(-746 -564)" />
+									</svg>
+									<div class="header__form-dropdown-items">
+										<input class="header__form-dropdown" type="button" name="Transport" value="Train" />
+										<input class="header__form-dropdown" type="button" name="Transport" value="Plane" />
+										<input class="header__form-dropdown" type="button" name="Transport" value="Bus" />
+										<input class="header__form-dropdown" type="button" name="Transport" value="Ship" />
+									</div>
+								</div>
+								<div class="header__form-quantity-block">
+									<button class="header__form-quantity-btn" id="btn-quantity-plus" type="button">+</button>
+									<input class="header__form-number" id="input-quantity" type="number" name="number-of-people" placeholder="Number of people" value="0" min="0" max="12" title="quantity" size="2" />
+									<button class="header__form-quantity-btn" id="btn-quantity-minus" type="button">-</button>
+								</div>
+								<div class="header__form-submit-block">
+									<button class="form-btn" type="submit"><span>Search</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 				<div class="header__carousel-wrap">
 					<div class="header__carousel owl-carousel owl-theme">
 						<div class="header__carousel-item"><img src="./img/header-carousel/01.jpg" alt="01.jpg" /></div>
 						<div class="header__carousel-item"><img src="./img/header-carousel/02.jpg" alt="02.jpg" /></div>
 					</div>
 				</div>
-				<div class="header__form-wrap">
-					<div class="container">
-						<div class="header__form"></div>
+			</section>
+		</header>
+		<main>
+			<section class="cards-carousel">
+				<div class="container rel">
+					<div class="cards-carousel-wrap owl-carousel owl-theme">
+						<div class="cards-carousel-item">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/01.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+							<div class="cards-carousel-item__info">
+								<div class="cards-carousel-item__info-text">
+									<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
+									<h4 class="cards-carousel__info-text-subtitle">Sea Voyages</h4>
+								</div>
+								<div class="cards-carousel-item__info-visited">
+									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="Оценка «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4" checked>
+										<label for="star-4" title="Оценка «4»"></label>
+										<input type="radio" id="star-3" name="rating" value="3">
+										<label for="star-3" title="Оценка «3»"></label>
+										<input type="radio" id="star-2" name="rating" value="2">
+										<label for="star-2" title="Оценка «2»"></label>
+										<input type="radio" id="star-1" name="rating" value="1">
+										<label for="star-1" title="Оценка «1»"></label>
+									</div>
+									<div class="cards-carousel__info-visited-quantity">126 Visited</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards-carousel-item">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/02.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+							<div class="cards-carousel-item__info">
+								<div class="cards-carousel-item__info-text">
+									<h6 class="cards-carousel__info-text-title">Safe Guides</h6>
+									<h4 class="cards-carousel__info-text-subtitle">Mountain Climbs</h4>
+								</div>
+								<div class="cards-carousel-item__info-visited">
+									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="Оценка «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4" checked>
+										<label for="star-4" title="Оценка «4»"></label>
+										<input type="radio" id="star-3" name="rating" value="3">
+										<label for="star-3" title="Оценка «3»"></label>
+										<input type="radio" id="star-2" name="rating" value="2">
+										<label for="star-2" title="Оценка «2»"></label>
+										<input type="radio" id="star-1" name="rating" value="1">
+										<label for="star-1" title="Оценка «1»"></label>
+									</div>
+									<div class="cards-carousel__info-visited-quantity">241 Visited</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards-carousel-item">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/03.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+							<div class="cards-carousel-item__info">
+								<div class="cards-carousel-item__info-text">
+									<h6 class="cards-carousel__info-text-title">Expert Drivers</h6>
+									<h4 class="cards-carousel__info-text-subtitle">Quad Rides</h4>
+								</div>
+								<div class="cards-carousel-item__info-visited">
+									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="Оценка «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4" checked>
+										<label for="star-4" title="Оценка «4»"></label>
+										<input type="radio" id="star-3" name="rating" value="3">
+										<label for="star-3" title="Оценка «3»"></label>
+										<input type="radio" id="star-2" name="rating" value="2">
+										<label for="star-2" title="Оценка «2»"></label>
+										<input type="radio" id="star-1" name="rating" value="1">
+										<label for="star-1" title="Оценка «1»"></label>
+									</div>
+									<div class="cards-carousel__info-visited-quantity">296 Visited</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards-carousel-item">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/04.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+							<div class="cards-carousel-item__info">
+								<div class="cards-carousel-item__info-text">
+									<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
+									<h4 class="cards-carousel__info-text-subtitle">Air Tourism</h4>
+								</div>
+								<div class="cards-carousel-item__info-visited">
+									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="Оценка «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4" checked>
+										<label for="star-4" title="Оценка «4»"></label>
+										<input type="radio" id="star-3" name="rating" value="3">
+										<label for="star-3" title="Оценка «3»"></label>
+										<input type="radio" id="star-2" name="rating" value="2">
+										<label for="star-2" title="Оценка «2»"></label>
+										<input type="radio" id="star-1" name="rating" value="1">
+										<label for="star-1" title="Оценка «1»"></label>
+									</div>
+									<div class="cards-carousel__info-visited-quantity">321 Visited</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards-carousel-item">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/05.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+							<div class="cards-carousel-item__info">
+								<div class="cards-carousel-item__info-text">
+									<h6 class="cards-carousel__info-text-title">Safe Guides</h6>
+									<h4 class="cards-carousel__info-text-subtitle">Sea Slides</h4>
+								</div>
+								<div class="cards-carousel-item__info-visited">
+									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="Оценка «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4" checked>
+										<label for="star-4" title="Оценка «4»"></label>
+										<input type="radio" id="star-3" name="rating" value="3">
+										<label for="star-3" title="Оценка «3»"></label>
+										<input type="radio" id="star-2" name="rating" value="2">
+										<label for="star-2" title="Оценка «2»"></label>
+										<input type="radio" id="star-1" name="rating" value="1">
+										<label for="star-1" title="Оценка «1»"></label>
+									</div>
+									<div class="cards-carousel__info-visited-quantity">425 Visited</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards-carousel-item">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/06.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+							<div class="cards-carousel-item__info">
+								<div class="cards-carousel-item__info-text">
+									<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
+									<h4 class="cards-carousel__info-text-subtitle">Mountain Climbs</h4>
+								</div>
+								<div class="cards-carousel-item__info-visited">
+									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="Оценка «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4" checked>
+										<label for="star-4" title="Оценка «4»"></label>
+										<input type="radio" id="star-3" name="rating" value="3">
+										<label for="star-3" title="Оценка «3»"></label>
+										<input type="radio" id="star-2" name="rating" value="2">
+										<label for="star-2" title="Оценка «2»"></label>
+										<input type="radio" id="star-1" name="rating" value="1">
+										<label for="star-1" title="Оценка «1»"></label>
+									</div>
+									<div class="cards-carousel__info-visited-quantity">187 Visited</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cards-carousel-nav">
+						<button class="cards-carousel-nav-btn cards-carousel-nav-prev">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="27px">
+								<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M0.004,13.383 C0.004,13.166 0.111,12.841 0.326,12.623 L11.093,0.699 C11.524,0.266 12.171,0.266 12.601,0.591 C13.031,1.025 13.031,1.675 12.708,2.109 L2.587,13.383 L12.708,24.549 C13.139,24.983 13.031,25.634 12.601,26.066 C12.171,26.500 11.524,26.392 11.093,25.958 L0.326,14.034 C0.111,13.925 0.004,13.600 0.004,13.383 Z" />
+							</svg></button>
+						<button class="cards-carousel-nav-btn cards-carousel-nav-next">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="27px">
+								<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M12.996,13.383 C12.996,13.166 12.889,12.841 12.674,12.623 L1.907,0.699 C1.476,0.266 0.829,0.266 0.399,0.591 C-0.031,1.025 -0.031,1.675 0.292,2.109 L10.413,13.383 L0.292,24.549 C-0.139,24.983 -0.031,25.634 0.399,26.066 C0.829,26.500 1.476,26.392 1.907,25.958 L12.674,14.034 C12.889,13.925 12.996,13.600 12.996,13.383 Z" />
+							</svg></button>
 					</div>
 				</div>
 			</section>
-		</header>
-		<main> </main>
+			<section class="newsletter">
+				<div class="container">
+					<div class="newsletter-wrap">
+						<div class="newsletter__info">
+							<h3 class="newsletter__info-title">Subscribe to our newsletter</h3>
+							<h5 class="newsletter__info-subtitle">And receive all the latest news, discounts and updates about the most visited locations from around the globe, daily.</h5>
+						</div>
+						<form class="newsletter__btn">
+							<button class="form-btn" type="submit"><span>Subscribe</span></button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer></footer>
 	</div>
 	<script src="./libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="./js/main.js"></script>
 	<script src="./js/carousel.js"></script>
+	<script src="./js/dropdown.js"></script>
+	<script src="./js/stars-raiting.js"></script>
 	<script src="./libs/owlcarousel/owl.carousel.min.js"></script>
 	<script>
 		jQuery(document).ready(function($) {

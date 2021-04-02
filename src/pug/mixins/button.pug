@@ -1,2 +1,7 @@
-mixin button(link, text)
-    a(href= link).button__link #{text}
+mixin button(text)
+    button(type="submit" class='form-btn')
+        span #{text}
+
+mixin button-link(link, text)
+    a(href= link)(type="submit" class='form-btn')
+        span #{text}
