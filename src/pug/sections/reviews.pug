@@ -1,0 +1,20 @@
+section.reviews
+    .container 
+        .reviews-wrap
+            .reviews__nav
+                a(href="#").reviews__nav-list Reviews 
+                    span (256)
+                .reviews__nav-btns 
+                    .reviews__nav-btns-dropdown 
+                        button.reviews__nav-dropdown(type='button') Sort
+                        .reviews__nav-btns-dropdown-items 
+                            button.reviews__nav-dropdown-item(type='button') New
+                            button.reviews__nav-dropdown-item(type='button') Popular
+                    .reviews__nav-btns-link
+                        a(href="#").reviews__nav-link
+                            span Post A Review
+            .reviews__list 
+                +review('avatar.jpg', 'avatar', 'Anna Marksson', 'Visited Las Vegas', '5', 'We had a lovely time', '02.17.2017', '“I don’t know where to start. It was simply amazing! From the time we got there to the staff at our hotel, to our Uber driver, to the meals at our restaurant, i can’t wait until we visit Las Vegas again!”')
+                +review('avatar-1.jpg', 'avatar', 'Edward Signim', 'Visited Rome', '5', 'Magical Rome!', '02.16.2017', '“Everybody knows how much history this city has, but we were not prepared by just how much it is! At every single corner you can find a piece of history that is there for thousands of years. If you didn’t visit, what you are waiting for?”')
+                +review('avatar-2.jpg', 'avatar', 'Jenna Miles', 'Visited Belgrade', '4', 'Where Sava meets Danube', '02.15.2017', '“This city is nothing what i expected. Such a lively place, full of color, wonderful people and fantastic food. Service is lovely and my tour guide showed me much more than it was planned, simply because he is amazing at his job! I can’t wait to go back!”')
+                +review('avatar-3.jpg', 'avatar', 'Jonathan Bright', 'Visited Tahiti', '4', 'White sand, blue skies', '02.14.2017', '“When we got there it was raining, but after it stopped, it was lovely! Temperature is pleasant and i loved their free wifi zones. If you have, bring your camera because you are going to need it, a lot.”')

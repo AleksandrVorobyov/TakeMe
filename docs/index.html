@@ -52,7 +52,7 @@
 								</div>
 								<div class="header__form-quantity-block">
 									<button class="header__form-quantity-btn" id="btn-quantity-plus" type="button">+</button>
-									<input class="header__form-number" id="input-quantity" type="number" name="number-of-people" placeholder="Number of people" value="0" min="0" max="12" title="quantity" size="2" />
+									<input class="header__form-number" id="input-quantity" type="number" name="number-of-people" placeholder="Number of people" value="" min="0" max="12" title="quantity" size="2" />
 									<button class="header__form-quantity-btn" id="btn-quantity-minus" type="button">-</button>
 								</div>
 								<div class="header__form-submit-block">
@@ -71,143 +71,241 @@
 			</section>
 		</header>
 		<main>
+			<section class="story">
+				<div class="container">
+					<div class="story-wrap">
+						<div class="story__info">
+							<h3 class="story__info-title">Magical Santorini Greece’s Jewel</h3>
+							<p class="story__info-text">Candy-colored houses carved into cliffs, sapphire waters, gleaming white buildings topped with half-spheres the color of a stormy sky.</p>
+							<div class="story__info-link"> <a class="form-btn" href="#"><span>Explore More</span></a>
+							</div>
+						</div>
+						<div class="story__carousel-wrap">
+							<div class="story__carousel owl-carousel owl-theme">
+								<div class="story__carousel-item"><img src="./img/story/01.jpg" alt="story-01" /></div>
+								<div class="story__carousel-item"><img src="./img/story/02.jpg" alt="story-02" /></div>
+								<div class="story__carousel-item"><img src="./img/story/01.jpg" alt="story-01" /></div>
+								<div class="story__carousel-item"><img src="./img/story/02.jpg" alt="story-02" /></div>
+								<div class="story__carousel-item"><img src="./img/story/01.jpg" alt="story-01" /></div>
+								<div class="story__carousel-item"><img src="./img/story/02.jpg" alt="story-02" /></div>
+								<div class="story__carousel-item"><img src="./img/story/01.jpg" alt="story-01" /></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="articles">
+				<div class="container">
+					<div class="articles-wrap">
+						<div class="article__card" data-checked="4"><a class="article__card-link" href="#"></a>
+							<div class="article__card-img"><a class="article__card-img-link open" href="#">Open</a><img src="./img/articles/01.jpg" alt="article-01" /></div>
+							<div class="article__card-title">
+								<h4>Magical Paris</h4>
+							</div>
+							<div class="article__card-text">
+								<p>City of light, one of the most famous cities in the world is waiting to be explored. Some of the most famous museums, food and landmarks are waiting for you in Paris.</p>
+							</div>
+							<div class="article__card-rating">
+								<form class="article__card-rating-form raiting"><input type="radio" id="star-5" name="rating" value="5">
+									<label for="star-5" title="rating «5»"></label>
+									<input type="radio" id="star-4" name="rating" value="4">
+									<label for="star-4" title="rating «4»"></label>
+									<input type="radio" id="star-3" name="rating" value="3">
+									<label for="star-3" title="rating «3»"></label>
+									<input type="radio" id="star-2" name="rating" value="2">
+									<label for="star-2" title="rating «2»"></label>
+									<input type="radio" id="star-1" name="rating" value="1">
+									<label for="star-1" title="rating «1»"></label>
+								</form>
+								<div class="article__card-rating-visited">2436 Ratings</div>
+							</div>
+						</div>
+						<div class="article__card" data-checked="4"><a class="article__card-link" href="#"></a>
+							<div class="article__card-img"><a class="article__card-img-link open" href="#">Open</a><img src="./img/articles/02.jpg" alt="article-02" /></div>
+							<div class="article__card-title">
+								<h4>Classic London</h4>
+							</div>
+							<div class="article__card-text">
+								<p>City of history, one of the most famous cities in the world is waiting to be explored. Some of the most famous museums, food, pubs and landmarks are waiting for you in London.</p>
+							</div>
+							<div class="article__card-rating">
+								<form class="article__card-rating-form raiting"><input type="radio" id="star-5" name="rating" value="5">
+									<label for="star-5" title="rating «5»"></label>
+									<input type="radio" id="star-4" name="rating" value="4">
+									<label for="star-4" title="rating «4»"></label>
+									<input type="radio" id="star-3" name="rating" value="3">
+									<label for="star-3" title="rating «3»"></label>
+									<input type="radio" id="star-2" name="rating" value="2">
+									<label for="star-2" title="rating «2»"></label>
+									<input type="radio" id="star-1" name="rating" value="1">
+									<label for="star-1" title="rating «1»"></label>
+								</form>
+								<div class="article__card-rating-visited">5438 Ratings</div>
+							</div>
+						</div>
+						<div class="article__card" data-checked="5"><a class="article__card-link" href="#"></a>
+							<div class="article__card-img"><a class="article__card-img-link open" href="#">Open</a><img src="./img/articles/03.jpg" alt="article-03" /></div>
+							<div class="article__card-title">
+								<h4>Famous New York</h4>
+							</div>
+							<div class="article__card-text">
+								<p>City of fashion and yellow cabs, one of the most famous cities in the world is waiting to be explored. Some of the most famous museums, food and landmarks are waiting for you in New York.</p>
+							</div>
+							<div class="article__card-rating">
+								<form class="article__card-rating-form raiting"><input type="radio" id="star-5" name="rating" value="5">
+									<label for="star-5" title="rating «5»"></label>
+									<input type="radio" id="star-4" name="rating" value="4">
+									<label for="star-4" title="rating «4»"></label>
+									<input type="radio" id="star-3" name="rating" value="3">
+									<label for="star-3" title="rating «3»"></label>
+									<input type="radio" id="star-2" name="rating" value="2">
+									<label for="star-2" title="rating «2»"></label>
+									<input type="radio" id="star-1" name="rating" value="1">
+									<label for="star-1" title="rating «1»"></label>
+								</form>
+								<div class="article__card-rating-visited">1256 Ratings</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="cards-carousel">
 				<div class="container rel">
 					<div class="cards-carousel-wrap owl-carousel owl-theme">
-						<div class="cards-carousel-item">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/01.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+						<div class="cards-carousel-item" data-checked="4">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/01.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
 							<div class="cards-carousel-item__info">
 								<div class="cards-carousel-item__info-text">
 									<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
 									<h4 class="cards-carousel__info-text-subtitle">Sea Voyages</h4>
 								</div>
 								<div class="cards-carousel-item__info-visited">
-									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
-										<label for="star-5" title="Оценка «5»"></label>
-										<input type="radio" id="star-4" name="rating" value="4" checked>
-										<label for="star-4" title="Оценка «4»"></label>
+									<form class="cards-carousel__info-visited-raiting raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="rating «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4">
+										<label for="star-4" title="rating «4»"></label>
 										<input type="radio" id="star-3" name="rating" value="3">
-										<label for="star-3" title="Оценка «3»"></label>
+										<label for="star-3" title="rating «3»"></label>
 										<input type="radio" id="star-2" name="rating" value="2">
-										<label for="star-2" title="Оценка «2»"></label>
+										<label for="star-2" title="rating «2»"></label>
 										<input type="radio" id="star-1" name="rating" value="1">
-										<label for="star-1" title="Оценка «1»"></label>
-									</div>
+										<label for="star-1" title="rating «1»"></label>
+									</form>
 									<div class="cards-carousel__info-visited-quantity">126 Visited</div>
 								</div>
 							</div>
 						</div>
-						<div class="cards-carousel-item">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/02.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+						<div class="cards-carousel-item" data-checked="3">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/02.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
 							<div class="cards-carousel-item__info">
 								<div class="cards-carousel-item__info-text">
 									<h6 class="cards-carousel__info-text-title">Safe Guides</h6>
 									<h4 class="cards-carousel__info-text-subtitle">Mountain Climbs</h4>
 								</div>
 								<div class="cards-carousel-item__info-visited">
-									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
-										<label for="star-5" title="Оценка «5»"></label>
-										<input type="radio" id="star-4" name="rating" value="4" checked>
-										<label for="star-4" title="Оценка «4»"></label>
+									<form class="cards-carousel__info-visited-raiting raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="rating «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4">
+										<label for="star-4" title="rating «4»"></label>
 										<input type="radio" id="star-3" name="rating" value="3">
-										<label for="star-3" title="Оценка «3»"></label>
+										<label for="star-3" title="rating «3»"></label>
 										<input type="radio" id="star-2" name="rating" value="2">
-										<label for="star-2" title="Оценка «2»"></label>
+										<label for="star-2" title="rating «2»"></label>
 										<input type="radio" id="star-1" name="rating" value="1">
-										<label for="star-1" title="Оценка «1»"></label>
-									</div>
+										<label for="star-1" title="rating «1»"></label>
+									</form>
 									<div class="cards-carousel__info-visited-quantity">241 Visited</div>
 								</div>
 							</div>
 						</div>
-						<div class="cards-carousel-item">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/03.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+						<div class="cards-carousel-item" data-checked="5">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/03.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
 							<div class="cards-carousel-item__info">
 								<div class="cards-carousel-item__info-text">
 									<h6 class="cards-carousel__info-text-title">Expert Drivers</h6>
 									<h4 class="cards-carousel__info-text-subtitle">Quad Rides</h4>
 								</div>
 								<div class="cards-carousel-item__info-visited">
-									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
-										<label for="star-5" title="Оценка «5»"></label>
-										<input type="radio" id="star-4" name="rating" value="4" checked>
-										<label for="star-4" title="Оценка «4»"></label>
+									<form class="cards-carousel__info-visited-raiting raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="rating «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4">
+										<label for="star-4" title="rating «4»"></label>
 										<input type="radio" id="star-3" name="rating" value="3">
-										<label for="star-3" title="Оценка «3»"></label>
+										<label for="star-3" title="rating «3»"></label>
 										<input type="radio" id="star-2" name="rating" value="2">
-										<label for="star-2" title="Оценка «2»"></label>
+										<label for="star-2" title="rating «2»"></label>
 										<input type="radio" id="star-1" name="rating" value="1">
-										<label for="star-1" title="Оценка «1»"></label>
-									</div>
+										<label for="star-1" title="rating «1»"></label>
+									</form>
 									<div class="cards-carousel__info-visited-quantity">296 Visited</div>
 								</div>
 							</div>
 						</div>
-						<div class="cards-carousel-item">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/04.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+						<div class="cards-carousel-item" data-checked="3">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/04.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
 							<div class="cards-carousel-item__info">
 								<div class="cards-carousel-item__info-text">
 									<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
 									<h4 class="cards-carousel__info-text-subtitle">Air Tourism</h4>
 								</div>
 								<div class="cards-carousel-item__info-visited">
-									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
-										<label for="star-5" title="Оценка «5»"></label>
-										<input type="radio" id="star-4" name="rating" value="4" checked>
-										<label for="star-4" title="Оценка «4»"></label>
+									<form class="cards-carousel__info-visited-raiting raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="rating «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4">
+										<label for="star-4" title="rating «4»"></label>
 										<input type="radio" id="star-3" name="rating" value="3">
-										<label for="star-3" title="Оценка «3»"></label>
+										<label for="star-3" title="rating «3»"></label>
 										<input type="radio" id="star-2" name="rating" value="2">
-										<label for="star-2" title="Оценка «2»"></label>
+										<label for="star-2" title="rating «2»"></label>
 										<input type="radio" id="star-1" name="rating" value="1">
-										<label for="star-1" title="Оценка «1»"></label>
-									</div>
+										<label for="star-1" title="rating «1»"></label>
+									</form>
 									<div class="cards-carousel__info-visited-quantity">321 Visited</div>
 								</div>
 							</div>
 						</div>
-						<div class="cards-carousel-item">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/05.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+						<div class="cards-carousel-item" data-checked="5">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/05.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
 							<div class="cards-carousel-item__info">
 								<div class="cards-carousel-item__info-text">
 									<h6 class="cards-carousel__info-text-title">Safe Guides</h6>
 									<h4 class="cards-carousel__info-text-subtitle">Sea Slides</h4>
 								</div>
 								<div class="cards-carousel-item__info-visited">
-									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
-										<label for="star-5" title="Оценка «5»"></label>
-										<input type="radio" id="star-4" name="rating" value="4" checked>
-										<label for="star-4" title="Оценка «4»"></label>
+									<form class="cards-carousel__info-visited-raiting raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="rating «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4">
+										<label for="star-4" title="rating «4»"></label>
 										<input type="radio" id="star-3" name="rating" value="3">
-										<label for="star-3" title="Оценка «3»"></label>
+										<label for="star-3" title="rating «3»"></label>
 										<input type="radio" id="star-2" name="rating" value="2">
-										<label for="star-2" title="Оценка «2»"></label>
+										<label for="star-2" title="rating «2»"></label>
 										<input type="radio" id="star-1" name="rating" value="1">
-										<label for="star-1" title="Оценка «1»"></label>
-									</div>
+										<label for="star-1" title="rating «1»"></label>
+									</form>
 									<div class="cards-carousel__info-visited-quantity">425 Visited</div>
 								</div>
 							</div>
 						</div>
-						<div class="cards-carousel-item">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/06.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link" href="#">Open</a>
+						<div class="cards-carousel-item" data-checked="4">
+							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/06.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
 							<div class="cards-carousel-item__info">
 								<div class="cards-carousel-item__info-text">
 									<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
 									<h4 class="cards-carousel__info-text-subtitle">Mountain Climbs</h4>
 								</div>
 								<div class="cards-carousel-item__info-visited">
-									<div class="cards-carousel__info-visited-raiting"><input type="radio" id="star-5" name="rating" value="5">
-										<label for="star-5" title="Оценка «5»"></label>
-										<input type="radio" id="star-4" name="rating" value="4" checked>
-										<label for="star-4" title="Оценка «4»"></label>
+									<form class="cards-carousel__info-visited-raiting raiting"><input type="radio" id="star-5" name="rating" value="5">
+										<label for="star-5" title="rating «5»"></label>
+										<input type="radio" id="star-4" name="rating" value="4">
+										<label for="star-4" title="rating «4»"></label>
 										<input type="radio" id="star-3" name="rating" value="3">
-										<label for="star-3" title="Оценка «3»"></label>
+										<label for="star-3" title="rating «3»"></label>
 										<input type="radio" id="star-2" name="rating" value="2">
-										<label for="star-2" title="Оценка «2»"></label>
+										<label for="star-2" title="rating «2»"></label>
 										<input type="radio" id="star-1" name="rating" value="1">
-										<label for="star-1" title="Оценка «1»"></label>
-									</div>
+										<label for="star-1" title="rating «1»"></label>
+									</form>
 									<div class="cards-carousel__info-visited-quantity">187 Visited</div>
 								</div>
 							</div>
@@ -235,6 +333,124 @@
 						<form class="newsletter__btn">
 							<button class="form-btn" type="submit"><span>Subscribe</span></button>
 						</form>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="container">
+					<form class="contact__form">
+						<h2 class="contact__form-title">Contact Us</h2>
+						<div class="contact__form-wrap">
+							<div class="contact__form-row">
+								<div class="contact__form-item">
+									<h5 class="contact__form-item-title">First Name</h5>
+									<input class="contact-form-input" id="contact-form-first-name" type="text" name="contact-form-first-name" placeholder="First Name" />
+								</div>
+								<div class="contact__form-item">
+									<h5 class="contact__form-item-title">Last Name</h5>
+									<input class="contact-form-input" id="contact-form-last-name" type="text" name="contact-form-last-name" placeholder="Last Name" />
+								</div>
+							</div>
+							<div class="contact__form-row">
+								<div class="contact__form-item">
+									<h5 class="contact__form-item-title">Email</h5>
+									<input class="contact-form-input" id="contact-form-email" type="email" name="contact-form-email" placeholder="Email" />
+								</div>
+								<div class="contact__form-item">
+									<h5 class="contact__form-item-title">Phone</h5>
+									<input class="contact-form-input" id="contact-form-tel" type="tel" name="contact-form-phone" placeholder="Phone" />
+								</div>
+							</div>
+							<div class="contact__form-row">
+								<div class="contact__form-item-big">
+									<h5 class="contact__form-item-title">Message</h5>
+									<textarea class="contact-form-textarea" id="contact-form-text" name="contact-form-text" cols="20" rows="5" placeholder="Your message"> </textarea>
+								</div>
+							</div>
+							<div class="contact__form-btn">
+								<button class="form-btn" type="submit"><span>Send</span></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="container">
+					<div class="reviews-wrap">
+						<div class="reviews__nav"><a class="reviews__nav-list" href="#">Reviews <span>(256)</span></a>
+							<div class="reviews__nav-btns">
+								<div class="reviews__nav-btns-dropdown">
+									<button class="reviews__nav-dropdown" type="button">Sort</button>
+									<div class="reviews__nav-btns-dropdown-items">
+										<button class="reviews__nav-dropdown-item" type="button">New</button>
+										<button class="reviews__nav-dropdown-item" type="button">Popular</button>
+									</div>
+								</div>
+								<div class="reviews__nav-btns-link"><a class="reviews__nav-link" href="#"><span>Post A Review</span></a></div>
+							</div>
+						</div>
+						<div class="reviews__list">
+							<div class="reviews__list-item">
+								<div class="reviews__list-info">
+									<div class="reviews__list-info-avatar"><img src="./img/reviews/avatar/avatar.jpg" alt="avatar" /></div>
+									<div class="reviews__list-info-col">
+										<div class="reviews__list-info-name">Anna Marksson</div>
+										<div class="reviews__list-info-country">Visited Las Vegas</div>
+										<div class="reviews__list-info-rating" data-rating="5"></div>
+									</div>
+								</div>
+								<div class="reviews__list-message">
+									<h4 class="reviews__list-message-title">We had a lovely time</h4>
+									<p class="reviews__list-message-data">02.17.2017</p>
+									<p class="reviews__list-message-text">“I don’t know where to start. It was simply amazing! From the time we got there to the staff at our hotel, to our Uber driver, to the meals at our restaurant, i can’t wait until we visit Las Vegas again!”</p>
+								</div>
+							</div>
+							<div class="reviews__list-item">
+								<div class="reviews__list-info">
+									<div class="reviews__list-info-avatar"><img src="./img/reviews/avatar/avatar-1.jpg" alt="avatar" /></div>
+									<div class="reviews__list-info-col">
+										<div class="reviews__list-info-name">Edward Signim</div>
+										<div class="reviews__list-info-country">Visited Rome</div>
+										<div class="reviews__list-info-rating" data-rating="5"></div>
+									</div>
+								</div>
+								<div class="reviews__list-message">
+									<h4 class="reviews__list-message-title">Magical Rome!</h4>
+									<p class="reviews__list-message-data">02.16.2017</p>
+									<p class="reviews__list-message-text">“Everybody knows how much history this city has, but we were not prepared by just how much it is! At every single corner you can find a piece of history that is there for thousands of years. If you didn’t visit, what you are waiting for?”</p>
+								</div>
+							</div>
+							<div class="reviews__list-item">
+								<div class="reviews__list-info">
+									<div class="reviews__list-info-avatar"><img src="./img/reviews/avatar/avatar-2.jpg" alt="avatar" /></div>
+									<div class="reviews__list-info-col">
+										<div class="reviews__list-info-name">Jenna Miles</div>
+										<div class="reviews__list-info-country">Visited Belgrade</div>
+										<div class="reviews__list-info-rating" data-rating="4"></div>
+									</div>
+								</div>
+								<div class="reviews__list-message">
+									<h4 class="reviews__list-message-title">Where Sava meets Danube</h4>
+									<p class="reviews__list-message-data">02.15.2017</p>
+									<p class="reviews__list-message-text">“This city is nothing what i expected. Such a lively place, full of color, wonderful people and fantastic food. Service is lovely and my tour guide showed me much more than it was planned, simply because he is amazing at his job! I can’t wait to go back!”</p>
+								</div>
+							</div>
+							<div class="reviews__list-item">
+								<div class="reviews__list-info">
+									<div class="reviews__list-info-avatar"><img src="./img/reviews/avatar/avatar-3.jpg" alt="avatar" /></div>
+									<div class="reviews__list-info-col">
+										<div class="reviews__list-info-name">Jonathan Bright</div>
+										<div class="reviews__list-info-country">Visited Tahiti</div>
+										<div class="reviews__list-info-rating" data-rating="4"></div>
+									</div>
+								</div>
+								<div class="reviews__list-message">
+									<h4 class="reviews__list-message-title">White sand, blue skies</h4>
+									<p class="reviews__list-message-data">02.14.2017</p>
+									<p class="reviews__list-message-text">“When we got there it was raining, but after it stopped, it was lovely! Temperature is pleasant and i loved their free wifi zones. If you have, bring your camera because you are going to need it, a lot.”</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>

@@ -18,16 +18,13 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".cards-carousel-wrap").owlCarousel({
-        nav: true,
+        nav: false,
         dots: false,
         items: 3,
         margin: 30,
         smartSpeed: 2000,
         mouseDrag: true,
         touchDrag: true,
-        autoplay: true,
-        autoplayTimeout: 10000,
-        autoplayHoverPause: true,
     });
 
     $('.cards-carousel-nav-next').click(function() {
@@ -36,4 +33,16 @@ $(document).ready(function(){
     $('.cards-carousel-nav-prev').click(function() {
         $(".cards-carousel-wrap").trigger('prev.owl.carousel', [2500]);
     })
+});
+
+$(document).ready(function(){
+    $(".story__carousel").owlCarousel({
+        nav: false,
+        dots: true,
+        items: 2,
+        margin: 30,
+        smartSpeed: 2000,
+        mouseDrag: true,
+        touchDrag: true,
+    });
 });

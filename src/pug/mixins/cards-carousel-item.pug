@@ -1,23 +1,23 @@
-mixin cards-carousel-item(img, link, title, subtitle, visited)
-	.cards-carousel-item
+mixin cards-carousel-item(img, link, title, subtitle, visited, checked)
+	.cards-carousel-item(data-checked = checked)
 		.cards-carousel-item__img
 			img(src="./img/cards-carousel/" + img, alt="cards-carousel-01")
-		a(href= link).cards-carousel-item__link Open
+		a(href= link).cards-carousel-item__link.open Open
 		.cards-carousel-item__info
 			.cards-carousel-item__info-text
 				h6.cards-carousel__info-text-title #{title}
 				h4.cards-carousel__info-text-subtitle #{subtitle}
 			.cards-carousel-item__info-visited
-				.cards-carousel__info-visited-raiting
+				form.cards-carousel__info-visited-raiting.raiting
 					<input type="radio" id="star-5" name="rating" value="5">
-					<label for="star-5" title="Оценка «5»"></label>	
-					<input type="radio" id="star-4" name="rating" value="4" checked>
-					<label for="star-4" title="Оценка «4»"></label>    
+					<label for="star-5" title="rating «5»"></label>	
+					<input type="radio" id="star-4" name="rating" value="4">
+					<label for="star-4" title="rating «4»"></label>    
 					<input type="radio" id="star-3" name="rating" value="3">
-					<label for="star-3" title="Оценка «3»"></label>  
+					<label for="star-3" title="rating «3»"></label>  
 					<input type="radio" id="star-2" name="rating" value="2">
-					<label for="star-2" title="Оценка «2»"></label>    
+					<label for="star-2" title="rating «2»"></label>    
 					<input type="radio" id="star-1" name="rating" value="1">
-					<label for="star-1" title="Оценка «1»"></label>
+					<label for="star-1" title="rating «1»"></label>
 				.cards-carousel__info-visited-quantity #{visited} Visited
 

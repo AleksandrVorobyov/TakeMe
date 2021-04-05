@@ -52,36 +52,6 @@
   );
 }
 
-.cards-carousel-item__link {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  width: 180px;
-  height: 70px;
-  background: lightslategray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: 6px double #fff;
-  font-size: 36px;
-  font-weight: 400;
-  font-family: "Roboto-Regular";
-  color: rgb(255, 255, 255);
-  line-height: 36px;
-  opacity: 0;
-  text-transform: uppercase;
-  transition: transform 0.3s linear, opacity 0.3s linear;
-  will-change: transform, opacity;
-  z-index: 100;
-
-  &:hover {
-    opacity: 0.9 !important;
-  }
-}
-
 .cards-carousel-item__info {
   position: relative;
   display: flex;
@@ -166,47 +136,3 @@
   }
 }
 
-.cards-carousel__info-visited-raiting label:hover {
-  transform: scale(1.1);
-}
-
-.cards-carousel__info-visited-raiting:not(:checked) > input {
-  position: absolute;
-  top: -9999px;
-}
-
-.cards-carousel__info-visited-raiting:not(:checked) > label {
-  float: right;
-  width: 20px;
-  padding: 0;
-  cursor: pointer;
-  font-size: 24px;
-  line-height: 32px;
-  color: transparent;
-  text-shadow: 1px 1px 2px #fff;
-}
-
-.cards-carousel__info-visited-raiting:not(:checked) > label:before {
-  content: "★";
-}
-
-.cards-carousel__info-visited-raiting > input:checked ~ label {
-  color: #fa9d4c;
-}
-
-.cards-carousel__info-visited-raiting:not(:checked) > label:hover,
-.cards-carousel__info-visited-raiting:not(:checked) > label:hover ~ label {
-  color: #fa9d4c;
-}
-
-.cards-carousel__info-visited-raiting > input:checked + label:hover,
-.cards-carousel__info-visited-raiting > input:checked + label:hover ~ label,
-.cards-carousel__info-visited-raiting > input:checked ~ label:hover,
-.cards-carousel__info-visited-raiting > input:checked ~ label:hover ~ label,
-.cards-carousel__info-visited-raiting > label:hover ~ input:checked ~ label {
-  color: #fa9d4c;
-}
-
-.cards-carousel__info-visited-raiting > label:active {
-  position: relative;
-}

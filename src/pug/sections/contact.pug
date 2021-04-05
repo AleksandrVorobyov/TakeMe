@@ -1,0 +1,25 @@
+section.contact 
+    .container 
+        form.contact__form 
+            h2.contact__form-title Contact Us
+            .contact__form-wrap 
+                .contact__form-row
+                    .contact__form-item
+                        h5.contact__form-item-title First Name
+                        input#contact-form-first-name(type="text", class='contact-form-input' name="contact-form-first-name" placeholder='First Name')
+                    .contact__form-item
+                        h5.contact__form-item-title Last Name
+                        input#contact-form-last-name(type="text", class='contact-form-input' name="contact-form-last-name" placeholder='Last Name')
+                .contact__form-row
+                    .contact__form-item
+                        h5.contact__form-item-title Email
+                        input#contact-form-email(type="email", class='contact-form-input' name="contact-form-email" placeholder='Email')
+                    .contact__form-item
+                        h5.contact__form-item-title Phone
+                        input#contact-form-tel(type="tel", class='contact-form-input' name="contact-form-phone" placeholder='Phone')
+                .contact__form-row
+                    .contact__form-item-big
+                        h5.contact__form-item-title Message
+                        textarea#contact-form-text(class='contact-form-textarea' name="contact-form-text" cols="20" rows="5" placeholder='Your message') 
+                .contact__form-btn
+                    +button('Send')
