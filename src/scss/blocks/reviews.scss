@@ -7,6 +7,11 @@
   z-index: 200;
 }
 
+.reviews-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__nav {
   display: flex;
   justify-content: space-between;
@@ -225,6 +230,7 @@
 
 .reviews__list {
   z-index: 50;
+  margin-bottom: 50px;
 }
 
 .reviews__list-item + .reviews__list-item {
@@ -233,4 +239,9 @@
 
 .reviews__list-item:last-child {
   border-bottom: 2px solid #e2e2e2;
+}
+
+.reviews__list-btn {
+  width: 170px;
+  align-self: center;
 }

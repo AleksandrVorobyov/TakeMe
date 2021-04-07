@@ -27,3 +27,9 @@ inputQuantity.addEventListener('change', function(e) {
         alert('Max quantity 12 people!');
     }
 })
+
+const bannerVideoBtn = document.querySelector('[banner-video-remove]');
+const bannerVideoItem = document.querySelector('.banner-video__item');
+bannerVideoBtn.addEventListener('click', function(e) {
+    bannerVideoItem.classList.remove('active');
+})

@@ -100,51 +100,57 @@
   }
 }
 
-.raiting label:hover {
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.rating label:hover {
   transform: scale(1.1);
 }
 
-.raiting:not(:checked) > input {
+.rating:not(:checked) > input {
   position: absolute;
   left: -9999px;
 }
 
-.raiting:not(:checked) > label {
+.rating:not(:checked) > label {
   float: right;
   width: 20px;
   padding: 0;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   color: #fa9d4c;
 }
 
-.raiting:not(:checked) > label:before {
+.rating:not(:checked) > label:before {
   content: "☆";
 }
 
-.raiting > input:checked ~ label {
+.rating > input:checked ~ label {
   color: #fa9d4c;
 }
 
-.raiting > input:checked ~ label:before {
+.rating > input:checked ~ label:before {
   content: "★";
 }
 
-.raiting:not(:checked) > label:hover,
-.raiting:not(:checked) > label:hover ~ label {
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
   color: #fa9d4c;
 }
 
-.raiting > input:checked + label:hover,
-.raiting > input:checked + label:hover ~ label,
-.raiting > input:checked ~ label:hover,
-.raiting > input:checked ~ label:hover ~ label,
-.raiting > label:hover ~ input:checked ~ label {
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
   color: #fa9d4c;
 }
 
-.raiting > label:active {
+.rating > label:active {
   position: relative;
 }
 

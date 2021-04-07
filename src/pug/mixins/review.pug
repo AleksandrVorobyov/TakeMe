@@ -1,13 +1,14 @@
-mixin review(img, alt, name, country, rating, title, data, text)
-    .reviews__list-item 
-        .reviews__list-info
-            .reviews__list-info-avatar
-                img(src="./img/reviews/avatar/" + img, alt= alt)
-            .reviews__list-info-col 
-                .reviews__list-info-name #{name}
-                .reviews__list-info-country #{country}
-                .reviews__list-info-rating(data-rating= rating)
-        .reviews__list-message
-            h4.reviews__list-message-title #{title}
-            p.reviews__list-message-data #{data}
-            p.reviews__list-message-text #{text}
+mixin review(img, alt, name, country, checked, title, data, text)
+	.reviews__list-item 
+		.reviews__list-info
+			.reviews__list-info-avatar
+				img(src="./img/reviews/avatar/" + img, alt= alt)
+			.reviews__list-info-col 
+				.reviews__list-info-name #{name}
+				.reviews__list-info-country #{country}
+				form.reviews__list-info-rating
+					+rating(checked)
+		.reviews__list-message
+			h4.reviews__list-message-title #{title}
+			p.reviews__list-message-data #{data}
+			p.reviews__list-message-text #{text} 
