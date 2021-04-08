@@ -1,0 +1,51 @@
+.app {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 20px 0px $boxShadow;
+  margin-bottom: 20px;
+  z-index: 200;
+}
+
+.app-wrap {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding: 140px 0px;
+  padding-right: 50px;
+}
+
+.app__block-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.app__block-article {
+  max-width: 750px;
+}
+
+.app__block-article-title {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 48px;
+  font-family: "Roboto-Bold";
+  color: rgb(134, 134, 134);
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+}
+
+.app__block-article-text {
+  display: inline-block;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(134, 134, 134);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.app__block-article-btn {
+  width: 270px;
+}

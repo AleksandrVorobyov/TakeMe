@@ -1,0 +1,66 @@
+.copy {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  box-shadow: 0 20px 0px $boxShadow;
+  margin-bottom: 20px;
+  z-index: 200;
+}
+
+.copy-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy__table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy__table-link {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(134, 134, 134);
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.3s linear;
+
+  &::before {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background: $blueColor;
+    opacity: 0;
+    transition: opacity 0.3s linear, bottom 0.3s linear;
+  }
+
+  &:hover {
+    color: $blueColor;
+
+    &::before {
+      opacity: 1;
+      bottom: -3px;
+    }
+  }
+}
+
+.copy__text {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(134, 134, 134);
+  line-height: 1;
+}
+
+.copy__table-item + .copy__table-item {
+  margin-left: 20px;
+}

@@ -1,0 +1,125 @@
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 80px 0 40px;
+  border-bottom: 1px solid #e2e2e2;
+  z-index: 200;
+}
+
+.footer__table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__table-title {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(52, 52, 52);
+  line-height: 1;
+}
+
+.footer__table-link {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(134, 134, 134);
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.3s linear;
+
+  &::before {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background: $blueColor;
+    opacity: 0;
+    transition: opacity 0.3s linear, bottom 0.3s linear;
+  }
+
+  &:hover {
+    color: $blueColor;
+
+    &::before {
+      opacity: 1;
+      bottom: -3px;
+    }
+  }
+}
+
+.footer__table-item:first-child + .footer__table-item {
+  margin-top: 50px;
+}
+
+.footer__table-item + .footer__table-item {
+  margin-top: 20px;
+}
+
+.footer__table-col {
+  max-width: 150px;
+}
+
+.footer__table-col--big {
+  max-width: 470px;
+  width: 100%;
+}
+
+.footer__table-social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: border 0.3s linear;
+
+  svg path {
+    transition: fill 0.3s linear;
+  }
+
+  &:hover {
+    border: 2px solid $blueColor;
+
+    svg path {
+      fill: $blueColor;
+    }
+  }
+}
+
+.footer__table-social-link + .footer__table-social-link {
+  margin-left: 30px;
+}
+
+.footer__table-form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-email-form {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(134, 134, 134);
+  line-height: 1;
+  text-align: left;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  width: 270px;
+  height: 45px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+}
+
+.footer__table-form-btn {
+  width: 170px;
+}
