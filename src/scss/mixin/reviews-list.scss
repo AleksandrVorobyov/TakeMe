@@ -1,0 +1,79 @@
+.reviews__list-item {
+  position: relative;
+  padding: 25px 5px 25px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reviews__list-info {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__list-info-avatar {
+  display: inline-block;
+  min-width: 96px;
+  max-width: 96px;
+  height: 96px;
+  overflow: hidden;
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.reviews__list-info-avatar + .reviews__list-info-col {
+  margin-left: 20px;
+}
+
+.reviews__list-message {
+  position: relative;
+  max-width: 770px;
+  padding: 5px 0px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: #e2e2e2;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: -25px;
+  }
+}
+
+.reviews__list-info-name,
+.reviews__list-info-country {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(134, 134, 134);
+  line-height: 1.2;
+}
+
+.reviews__list-message-title,
+.reviews__list-message-data {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: #343434;
+  line-height: 1.2;
+}
+
+.reviews__list-message-data {
+  margin-bottom: 20px;
+}
+
+.reviews__list-message-text {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(134, 134, 134);
+  font-style: italic;
+  line-height: 1.2;
+}

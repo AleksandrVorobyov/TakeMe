@@ -1,0 +1,17 @@
+.catalog-trip-type {
+  position: relative;
+  width: 100%;
+  z-index: 100;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+
+  .catalog-nav-btn {
+    border-bottom: 0px solid #000;
+  }
+}
+
+.catalog-trip-type__body {
+  padding: 0 20px;
+  margin-bottom: 18px;
+}

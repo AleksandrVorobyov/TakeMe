@@ -1,0 +1,6 @@
+mixin dropdown(title, ...items)
+    .dropdown-wrap
+        button.dropdown-btn(type='button') #{title}
+        .dropdown-btn__items
+            each item in items
+                button.dropdown-btn__item(type='button') #{item}

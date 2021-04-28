@@ -1,0 +1,76 @@
+mixin catalog-menu()
+    .catalog-menu
+        .catalog-menu__item.hidden
+            +catalog-nav-btn('Language Spoken', 'active')
+            .catalog-menu__item-body(data-catalog-body)
+                .catalog-menu__item__body-item
+                    +radio('English', 'language-english', 'language')(checked='checked')
+                .catalog-menu__item__body-item
+                    +radio('French', 'language-french', 'language')
+                .catalog-menu__item__body-item
+                    +radio('Russian', 'language-russian', 'language')
+        .catalog-menu__item.hidden
+            +catalog-nav-btn('Meal Type', 'active')
+            .catalog-menu__item-body(data-catalog-body)
+                .catalog-menu__item__body-item
+                    +radio('All Inclusive', 'all-inc', 'catalog-inc')(checked='checked')
+                .catalog-menu__item__body-item
+                    +radio('Not All Inclusive', 'not-all-inc', 'catalog-inc')
+        .catalog-menu__item.hidden
+            +catalog-nav-btn('Excursions', 'active')
+            .catalog-menu__item-body(data-catalog-body)
+                .catalog-menu__item__body-item
+                    +radio('Air excursions', 'air-excursions', 'catalog-excursions')(checked='checked')
+                .catalog-menu__item__body-item
+                    +radio('Ship excursions', 'ship-excursions', 'catalog-excursions')
+                .catalog-menu__item__body-item
+                    +radio('Bus excursions', 'bus-excursions', 'catalog-excursions')
+        .catalog-menu__item.hidden
+            +catalog-nav-btn('Hotel Type', 'active')
+            .catalog-menu__item-body(data-catalog-body)
+                .catalog-menu__item__body-item
+                    +radio('Five Stars', 'five-stars', 'catalog-hotel-stars')(checked='checked')
+                .catalog-menu__item__body-item
+                    +radio('Four Stars', 'four-stars', 'catalog-hotel-stars')
+                .catalog-menu__item__body-item
+                    +radio('Third Stars', 'third-stars', 'catalog-hotel-stars')
+                .catalog-menu__item__body-item
+                    +radio('Two Stars', 'two-stars', 'catalog-hotel-stars')
+        .catalog-menu__item.hidden
+            +catalog-nav-btn('Room Type', 'active')
+            .catalog-menu__item-body(data-catalog-body)
+                .catalog-menu__item__body-item
+                    +radio('Third Rooms', 'third-rooms', 'catalog-room-type')(checked='checked')
+                .catalog-menu__item__body-item
+                    +radio('Two Rooms', 'two-rooms', 'catalog-room-type')
+                .catalog-menu__item__body-item
+                    +radio('One Rooms', 'one-rooms', 'catalog-room-type')
+        .catalog-menu__item.hidden
+            +catalog-nav-btn('Rent A Car', 'active')
+            .catalog-menu__item-body(data-catalog-body)
+                .catalog-menu__item__body-item
+                    +radio('Audi', 'rent-car-audi', 'catalog-rent-car')(checked='checked')
+                .catalog-menu__item__body-item
+                    +radio('BMW', 'rent-car-bmw', 'catalog-rent-car')
+                .catalog-menu__item__body-item
+                    +radio('Porshe', 'rent-car-porshe', 'catalog-rent-car')
+                .catalog-menu__item__body-item
+                    +radio('Kia', 'rent-car-kia', 'catalog-rent-car')
+                .catalog-menu__item__body-item
+                    +radio('Opel', 'rent-car-opel', 'catalog-rent-car')
+                .catalog-menu__item__body-item
+                    +radio('Lada Granta', 'rent-car-lada', 'catalog-rent-car')
+        .catalog-menu__item.hidden
+            +catalog-nav-btn('Shuttle Transport', 'active')
+            .catalog-menu__item-body(data-catalog-body)
+                .catalog-menu__item__body-item
+                    +radio('Need', 'shuttle-need', 'catalog-shuttle-transport')(checked='checked')
+                .catalog-menu__item__body-item
+                    +radio('No need', 'shuttle-no-need', 'catalog-shuttle-transport')
+        .catalog-menu__item.hidden
+            +catalog-nav-btn('Parking', 'active')
+            .catalog-menu__item-body(data-catalog-body)
+                .catalog-menu__item__body-item
+                    +radio('Parking', 'parking', 'catalog-parking')(checked='checked')
+                .catalog-menu__item__body-item
+                    +radio('No parking', 'no-parking', 'catalog-parking')

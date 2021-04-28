@@ -1,0 +1,33 @@
+.spaces-left {
+  display: grid;
+  cursor: pointer;
+  justify-items: center;
+}
+
+.spaces-left.active .spaces-left__icon svg {
+  path {
+    fill: $blueColor;
+    filter: drop-shadow(0px 3px 2px $blueColor);
+  }
+}
+
+.spaces-left.active .spaces-left__number {
+  color: $blueColor;
+}
+
+.spaces-left__number {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(134, 134, 134);
+  line-height: 1;
+}
+
+.catalog__content-col {
+  width: 370px;
+}
+
+.catalog__content-wrap {
+  display: flex;
+  justify-content: space-between;
+}

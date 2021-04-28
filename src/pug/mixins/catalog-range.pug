@@ -1,0 +1,8 @@
+mixin catalog-range()
+    .catalog-range
+        +catalog-nav-btn('Price Range')
+        .catalog-range__body(data-catalog-body)
+            div#slider-range
+            .catalog-range__body-input
+              <input type="text" id="slider-price-number-min" readonly>
+              <input type="text" id="slider-price-number-max" readonly>

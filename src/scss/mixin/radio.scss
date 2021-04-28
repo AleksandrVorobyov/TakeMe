@@ -1,0 +1,44 @@
+.radio label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px 10px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto-Regular";
+    color: rgb(134, 134, 134);
+    line-height: 1;
+    cursor: pointer;
+  
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      left: 0px;
+      top: 50%;
+      border: 3px solid #e2e2e2;
+      border-radius: 6px;
+      transform: translateY(-50%);
+    }
+  }
+  
+  .radio input {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .radio input:checked + label {
+    &::before {
+      border: 3px solid #3ec6ff;
+      background: #3ec6ff;
+    }
+  
+    &::after {
+      position: absolute;
+      content: url("../img/svg/check-arrow.png");
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%) scale(1.3);
+    }
+  }

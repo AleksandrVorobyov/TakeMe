@@ -1,0 +1,29 @@
+.open {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 180px;
+  height: 70px;
+  background: lightslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 6px double #fff;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(255, 255, 255);
+  line-height: 36px;
+  opacity: 0;
+  text-transform: uppercase;
+  transition: transform 0.3s linear, opacity 0.3s linear;
+  will-change: transform, opacity;
+  z-index: 100;
+
+  &:hover {
+    opacity: 0.9 !important;
+  }
+}

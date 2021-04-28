@@ -1,0 +1,40 @@
+.meta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  border-width: 2px;
+  border-color: rgb(245, 245, 245);
+  border-style: solid;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+}
+
+.meta__text {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+  color: rgb(134, 134, 134);
+  line-height: 14px;
+}
+
+.meta__text + .meta__btn {
+  margin-left: 20px;
+}
+
+.meta__btn {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  svg path {
+    transition: fill 0.3s linear;
+  }
+
+  &:hover svg path {
+    fill: red;
+  }
+}

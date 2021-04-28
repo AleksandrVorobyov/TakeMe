@@ -1,0 +1,8 @@
+mixin catalog-trip-type()
+    .catalog-trip-type
+        +catalog-nav-btn('Trip Type')
+        .catalog-trip-type__body(data-catalog-body)
+            .catalog-trip-type__body-item
+                +radio('Round Trip', 'trip-type', 'catalog-trip-type')(checked='checked')
+            .catalog-trip-type__body-item
+                +radio('One Way', 'one-way', 'catalog-trip-type')

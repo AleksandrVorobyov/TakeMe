@@ -1,12 +1,12 @@
-mixin rating(checked, id)
+mixin rating(checked, star)
 	.rating(data-checked=checked)
-		<input type="radio" id="star-5" name="rating" value="5">
-		<label for="star-5" title="rating «5»"></label>	
-		<input type="radio" id="star-4" name="rating" value="4">
-		<label for="star-4" title="rating «4»"></label>    
-		<input type="radio" id="star-3" name="rating" value="3">
-		<label for="star-3" title="rating «3»"></label>  
-		<input type="radio" id="star-2" name="rating" value="2">
-		<label for="star-2" title="rating «2»"></label>    
-		<input type="radio" id="star-1" name="rating" value="1">
-		<label for="star-1" title="rating «1»"></label>
+		input(type="radio" id="star-5" + star name="rating" value="5")
+		label(for="star-5" + star title="rating «5»")
+		input(type="radio" id="star-4" + star name="rating" value="4")
+		label(for="star-4" + star title="rating «4»")
+		input(type="radio" id="star-3" + star name="rating" value="3")
+		label(for="star-3" + star title="rating «3»")
+		input(type="radio" id="star-2" + star name="rating" value="2")
+		label(for="star-2" + star title="rating «2»")
+		input(type="radio" id="star-1" + star name="rating" value="1")
+		label(for="star-1" + star title="rating «1»")

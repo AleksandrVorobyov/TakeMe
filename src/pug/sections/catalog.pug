@@ -1,0 +1,34 @@
+section.catalog
+	.catalog__nav
+		.container
+			.catalog__nav-wrap
+				h5.catalog__nav-title Where do you want to travel today?
+				.catalog__nav-row 
+					.catalog__nav-meta
+						+meta('USA')
+						+meta('New York')
+						+meta('City Life')
+						+meta('Cheap')
+					.catalog__nav-sort
+						input#catalog-nav-sort-radio-list(type="radio", name="catalog-sort-radio", class='catalog-nav-sort-radio' checked)
+						label(for="catalog-nav-sort-radio-list") List View
+						input#catalog-nav-sort-radio-map(type="radio", name="catalog-sort-radio", class='catalog-nav-sort-radio')
+						label(for="catalog-nav-sort-radio-map") Map View
+						.catalog__nav-sort-dropdown 
+							+dropdown('Sort By', 'New', 'Popular', 'History', 'Watch later')
+	.catalog__content
+		.container
+			.catalog__content-wrap 
+				.catalog__content-col
+					+big-card-catalog('New York Skyline Tour The best of New York', '4', 'catalog-tour-best', '292', '01.jpg', '01', '25', 'Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour classic buildings, sights and more plus there is a lunch after the tour.', '121')
+					+catalog-menu()
+				.catalog__content-col
+					+big-card-catalog('New York Skyline Walking tour', '5', 'catalog-tour-walking', '317', '02.jpg', '02', '15', 'Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour classic buildings, sights and more plus there is a lunch after the tour.', '43')
+					+catalog-destination()
+					+catalog-trip-type()
+					+catalog-class()
+				.catalog__content-col
+					+big-card-catalog('New York Skyline The Food Tour', '4', 'catalog-tour-food', '146', '03.jpg', '03', '35', 'Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour classic buildings, sights and more plus there is a lunch after the tour.', '423')
+					+catalog-question('Where country you want to go?', '#', 'Where city you want to go?', '#')
+					+catalog-range()
+					+catalog-carry()

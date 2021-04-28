@@ -1,4 +1,4 @@
-mixin cards-carousel-item(img, link, title, subtitle, visited, checked)
+mixin cards-carousel-item(img, link, title, subtitle, visited, checked, star)
 	.cards-carousel-item(data-checked = checked)
 		.cards-carousel-item__img
 			img(src="./img/cards-carousel/" + img, alt="cards-carousel-01")
@@ -9,6 +9,6 @@ mixin cards-carousel-item(img, link, title, subtitle, visited, checked)
 				h4.cards-carousel__info-text-subtitle #{subtitle}
 			.cards-carousel-item__info-visited
 				form.cards-carousel__info-visited-raiting
-					+rating(checked)
+					+rating(checked, star)
 				.cards-carousel__info-visited-quantity #{visited} Visited
 

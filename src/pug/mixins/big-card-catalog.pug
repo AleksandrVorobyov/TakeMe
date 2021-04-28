@@ -1,0 +1,16 @@
+mixin big-card-catalog(title, rating, star, review, img, alt, price, text, spaces)
+    .big-card-catalog
+        .big-card-catalog__header 
+            h4.big-card-catalog__header-title #{title}
+            .big-card-catalog__header-rating 
+                +rating(rating, star)
+                span.big-card-catalog__header-rating-num #{review} Reviews
+        .big-card-catalog__img 
+            img(src="./img/big-card-catalog/" + img, alt="big-card-catalog-" + alt)
+            span.big-card-catalog__img-price $#{price} 
+        .big-card-catalog__footer
+            .big-card-catalog__text 
+                p #{text}
+            .big-card-catalog__links
+                +spaces-left(spaces)
+                +button('Book Now')

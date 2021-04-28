@@ -66,3 +66,19 @@ img {
   pointer-events: none;
 }
 
+.hidden {
+  // margin: 0 !important;
+  // padding: 0 !important;
+  max-height: 55px;
+  // overflow: hidden;
+  // visibility: hidden;
+}
+
+.anim-active {
+  animation: anim-catalog-body-active 2s forwards 0s;
+  max-height: 1000px;
+}
+
+.anim-off {
+  animation: anim-catalog-body-off 2s forwards 0s;
+}

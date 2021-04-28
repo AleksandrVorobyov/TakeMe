@@ -1,0 +1,17 @@
+.catalog-carry {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  background: #fff;
+  border-radius: 6px;
+  min-height: 120px;
+}
+
+.catalog-carry-item + .catalog-carry-item {
+  margin-top: 10px;
+}
+
+.catalog-carry-item {
+  width: 100%;
+}

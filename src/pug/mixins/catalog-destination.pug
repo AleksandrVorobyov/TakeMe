@@ -1,0 +1,14 @@
+mixin catalog-destination()
+    .catalog-destination
+        +catalog-nav-btn('Destination')
+        .catalog-destination__body(data-catalog-body)
+            input(type="radio" name='catalog-destination-radio' id='catalog-destination-europe').catalog-destination__body-radio
+            label(for='catalog-destination-europe').catalog-destination__body-label Europe
+            input(type="radio" name='catalog-destination-radio' id='catalog-destination-asia').catalog-destination__body-radio
+            label(for='catalog-destination-asia').catalog-destination__body-label Asia
+            input(type="radio" name='catalog-destination-radio' id='catalog-destination-africa').catalog-destination__body-radio
+            label(for='catalog-destination-africa').catalog-destination__body-label Africa
+            input(type="radio" name='catalog-destination-radio' id='catalog-destination-north-america').catalog-destination__body-radio
+            label(for='catalog-destination-north-america').catalog-destination__body-label North America
+            input(type="radio" name='catalog-destination-radio' id='catalog-destination-south-america').catalog-destination__body-radio
+            label(for='catalog-destination-south-america').catalog-destination__body-label South America

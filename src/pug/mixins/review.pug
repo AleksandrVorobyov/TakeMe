@@ -1,4 +1,4 @@
-mixin review(img, alt, name, country, checked, title, data, text)
+mixin review(img, alt, name, country, checked, star,  title, data, text)
 	.reviews__list-item 
 		.reviews__list-info
 			.reviews__list-info-avatar
@@ -7,7 +7,7 @@ mixin review(img, alt, name, country, checked, title, data, text)
 				.reviews__list-info-name #{name}
 				.reviews__list-info-country #{country}
 				form.reviews__list-info-rating
-					+rating(checked)
+					+rating(checked, star)
 		.reviews__list-message
 			h4.reviews__list-message-title #{title}
 			p.reviews__list-message-data #{data}

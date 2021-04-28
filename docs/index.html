@@ -12,6 +12,8 @@
 	<link rel="stylesheet" href="./libs/font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="./libs/css/owl.carousel.min.css" />
 	<link rel="stylesheet" href="./libs/css/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="./libs/jquery/jquery-ui.min.css" />
+	<link rel="stylesheet" href="./libs/jquery/jquery-ui.theme.min.css" />
 </head>
 
 <body class="index">
@@ -19,7 +21,7 @@
 		<header>
 			<section class="nav">
 				<div class="container">
-					<div class="nav-wrap"><a class="nav__logo" href="#">TakeMe</a>
+					<nav class="nav-wrap"><a class="nav__logo" href="#">TakeMe</a>
 						<ul class="nav__links">
 							<li class="nav__links-item"><a class="nav__links-link" href="#">Locations</a></li>
 							<li class="nav__links-item"><a class="nav__links-link" href="#">Accommodation</a></li>
@@ -28,7 +30,7 @@
 							<li class="nav__links-item"><a class="nav__links-link" href="#">Contact Us</a></li>
 							<li class="nav__links-item"><a class="nav__links-link" href="#">Log In</a></li>
 						</ul>
-					</div>
+					</nav>
 				</div>
 			</section>
 			<section class="header">
@@ -38,7 +40,7 @@
 							<h1 class="header__form-title">Find Your Dream Vacation Location</h1>
 							<h4 class="header__form-subtitle">Search hundreds of locations from around the world and find your perfect vacation location.</h4>
 							<form class="header__form">
-								<input class="header__form-search" type="search" name="" placeholder="Country or ZIP code" />
+								<input class="header__form-search" type="search" name="header-form-search" placeholder="Country or ZIP code" />
 								<div class="header__form-dropdown-block">
 									<input class="header__form-dropdown" type="button" id="form-dropdown-transport" title="Transport" name="Transport-name" value="Transportation" /><svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
 										<path id="arrow_icn" class="cls-1" d="M751,570l5-3v-2.875l-5,3.019L746,564v3l5,3h0Z" transform="translate(-746 -564)" />
@@ -52,7 +54,7 @@
 								</div>
 								<div class="header__form-quantity-block">
 									<button class="header__form-quantity-btn" id="btn-quantity-plus" type="button">+</button>
-									<input class="header__form-number" id="input-quantity" type="number" name="number-of-people" placeholder="Number of people" value="" min="0" max="12" title="quantity" size="2" />
+									<input class="header__form-number" id="input-quantity" type="number" name="number-of-people" placeholder="Number of people" value="" min="0" max="12" title="quantity" />
 									<button class="header__form-quantity-btn" id="btn-quantity-minus" type="button">-</button>
 								</div>
 								<div class="header__form-submit-block">
@@ -107,16 +109,17 @@
 							</div>
 							<div class="article__card-rating">
 								<form class="article__card-rating-form">
-									<div class="rating" data-checked="4"><input type="radio" id="star-5" name="rating" value="5">
-										<label for="star-5" title="rating «5»"></label>
-										<input type="radio" id="star-4" name="rating" value="4">
-										<label for="star-4" title="rating «4»"></label>
-										<input type="radio" id="star-3" name="rating" value="3">
-										<label for="star-3" title="rating «3»"></label>
-										<input type="radio" id="star-2" name="rating" value="2">
-										<label for="star-2" title="rating «2»"></label>
-										<input type="radio" id="star-1" name="rating" value="1">
-										<label for="star-1" title="rating «1»"></label>
+									<div class="rating" data-checked="4">
+										<input type="radio" id="star-5article-card-paris" name="rating" value="5" />
+										<label for="star-5article-card-paris" title="rating «5»"></label>
+										<input type="radio" id="star-4article-card-paris" name="rating" value="4" />
+										<label for="star-4article-card-paris" title="rating «4»"></label>
+										<input type="radio" id="star-3article-card-paris" name="rating" value="3" />
+										<label for="star-3article-card-paris" title="rating «3»"></label>
+										<input type="radio" id="star-2article-card-paris" name="rating" value="2" />
+										<label for="star-2article-card-paris" title="rating «2»"></label>
+										<input type="radio" id="star-1article-card-paris" name="rating" value="1" />
+										<label for="star-1article-card-paris" title="rating «1»"></label>
 									</div>
 								</form>
 								<div class="article__card-rating-visited">2436 Ratings</div>
@@ -132,16 +135,17 @@
 							</div>
 							<div class="article__card-rating">
 								<form class="article__card-rating-form">
-									<div class="rating" data-checked="4"><input type="radio" id="star-5" name="rating" value="5">
-										<label for="star-5" title="rating «5»"></label>
-										<input type="radio" id="star-4" name="rating" value="4">
-										<label for="star-4" title="rating «4»"></label>
-										<input type="radio" id="star-3" name="rating" value="3">
-										<label for="star-3" title="rating «3»"></label>
-										<input type="radio" id="star-2" name="rating" value="2">
-										<label for="star-2" title="rating «2»"></label>
-										<input type="radio" id="star-1" name="rating" value="1">
-										<label for="star-1" title="rating «1»"></label>
+									<div class="rating" data-checked="4">
+										<input type="radio" id="star-5article-card-london" name="rating" value="5" />
+										<label for="star-5article-card-london" title="rating «5»"></label>
+										<input type="radio" id="star-4article-card-london" name="rating" value="4" />
+										<label for="star-4article-card-london" title="rating «4»"></label>
+										<input type="radio" id="star-3article-card-london" name="rating" value="3" />
+										<label for="star-3article-card-london" title="rating «3»"></label>
+										<input type="radio" id="star-2article-card-london" name="rating" value="2" />
+										<label for="star-2article-card-london" title="rating «2»"></label>
+										<input type="radio" id="star-1article-card-london" name="rating" value="1" />
+										<label for="star-1article-card-london" title="rating «1»"></label>
 									</div>
 								</form>
 								<div class="article__card-rating-visited">5438 Ratings</div>
@@ -157,16 +161,17 @@
 							</div>
 							<div class="article__card-rating">
 								<form class="article__card-rating-form">
-									<div class="rating" data-checked="5"><input type="radio" id="star-5" name="rating" value="5">
-										<label for="star-5" title="rating «5»"></label>
-										<input type="radio" id="star-4" name="rating" value="4">
-										<label for="star-4" title="rating «4»"></label>
-										<input type="radio" id="star-3" name="rating" value="3">
-										<label for="star-3" title="rating «3»"></label>
-										<input type="radio" id="star-2" name="rating" value="2">
-										<label for="star-2" title="rating «2»"></label>
-										<input type="radio" id="star-1" name="rating" value="1">
-										<label for="star-1" title="rating «1»"></label>
+									<div class="rating" data-checked="5">
+										<input type="radio" id="star-5article-card-usa" name="rating" value="5" />
+										<label for="star-5article-card-usa" title="rating «5»"></label>
+										<input type="radio" id="star-4article-card-usa" name="rating" value="4" />
+										<label for="star-4article-card-usa" title="rating «4»"></label>
+										<input type="radio" id="star-3article-card-usa" name="rating" value="3" />
+										<label for="star-3article-card-usa" title="rating «3»"></label>
+										<input type="radio" id="star-2article-card-usa" name="rating" value="2" />
+										<label for="star-2article-card-usa" title="rating «2»"></label>
+										<input type="radio" id="star-1article-card-usa" name="rating" value="1" />
+										<label for="star-1article-card-usa" title="rating «1»"></label>
 									</div>
 								</form>
 								<div class="article__card-rating-visited">1256 Ratings</div>
@@ -187,16 +192,17 @@
 								</div>
 								<div class="cards-carousel-item__info-visited">
 									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="4"><input type="radio" id="star-5" name="rating" value="5">
-											<label for="star-5" title="rating «5»"></label>
-											<input type="radio" id="star-4" name="rating" value="4">
-											<label for="star-4" title="rating «4»"></label>
-											<input type="radio" id="star-3" name="rating" value="3">
-											<label for="star-3" title="rating «3»"></label>
-											<input type="radio" id="star-2" name="rating" value="2">
-											<label for="star-2" title="rating «2»"></label>
-											<input type="radio" id="star-1" name="rating" value="1">
-											<label for="star-1" title="rating «1»"></label>
+										<div class="rating" data-checked="4">
+											<input type="radio" id="star-5cards-carousel-sea-voyages" name="rating" value="5" />
+											<label for="star-5cards-carousel-sea-voyages" title="rating «5»"></label>
+											<input type="radio" id="star-4cards-carousel-sea-voyages" name="rating" value="4" />
+											<label for="star-4cards-carousel-sea-voyages" title="rating «4»"></label>
+											<input type="radio" id="star-3cards-carousel-sea-voyages" name="rating" value="3" />
+											<label for="star-3cards-carousel-sea-voyages" title="rating «3»"></label>
+											<input type="radio" id="star-2cards-carousel-sea-voyages" name="rating" value="2" />
+											<label for="star-2cards-carousel-sea-voyages" title="rating «2»"></label>
+											<input type="radio" id="star-1cards-carousel-sea-voyages" name="rating" value="1" />
+											<label for="star-1cards-carousel-sea-voyages" title="rating «1»"></label>
 										</div>
 									</form>
 									<div class="cards-carousel__info-visited-quantity">126 Visited</div>
@@ -212,16 +218,17 @@
 								</div>
 								<div class="cards-carousel-item__info-visited">
 									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="3"><input type="radio" id="star-5" name="rating" value="5">
-											<label for="star-5" title="rating «5»"></label>
-											<input type="radio" id="star-4" name="rating" value="4">
-											<label for="star-4" title="rating «4»"></label>
-											<input type="radio" id="star-3" name="rating" value="3">
-											<label for="star-3" title="rating «3»"></label>
-											<input type="radio" id="star-2" name="rating" value="2">
-											<label for="star-2" title="rating «2»"></label>
-											<input type="radio" id="star-1" name="rating" value="1">
-											<label for="star-1" title="rating «1»"></label>
+										<div class="rating" data-checked="3">
+											<input type="radio" id="star-5cards-carousel-mountain" name="rating" value="5" />
+											<label for="star-5cards-carousel-mountain" title="rating «5»"></label>
+											<input type="radio" id="star-4cards-carousel-mountain" name="rating" value="4" />
+											<label for="star-4cards-carousel-mountain" title="rating «4»"></label>
+											<input type="radio" id="star-3cards-carousel-mountain" name="rating" value="3" />
+											<label for="star-3cards-carousel-mountain" title="rating «3»"></label>
+											<input type="radio" id="star-2cards-carousel-mountain" name="rating" value="2" />
+											<label for="star-2cards-carousel-mountain" title="rating «2»"></label>
+											<input type="radio" id="star-1cards-carousel-mountain" name="rating" value="1" />
+											<label for="star-1cards-carousel-mountain" title="rating «1»"></label>
 										</div>
 									</form>
 									<div class="cards-carousel__info-visited-quantity">241 Visited</div>
@@ -237,16 +244,17 @@
 								</div>
 								<div class="cards-carousel-item__info-visited">
 									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="5"><input type="radio" id="star-5" name="rating" value="5">
-											<label for="star-5" title="rating «5»"></label>
-											<input type="radio" id="star-4" name="rating" value="4">
-											<label for="star-4" title="rating «4»"></label>
-											<input type="radio" id="star-3" name="rating" value="3">
-											<label for="star-3" title="rating «3»"></label>
-											<input type="radio" id="star-2" name="rating" value="2">
-											<label for="star-2" title="rating «2»"></label>
-											<input type="radio" id="star-1" name="rating" value="1">
-											<label for="star-1" title="rating «1»"></label>
+										<div class="rating" data-checked="5">
+											<input type="radio" id="star-5cards-carousel-quad-rides" name="rating" value="5" />
+											<label for="star-5cards-carousel-quad-rides" title="rating «5»"></label>
+											<input type="radio" id="star-4cards-carousel-quad-rides" name="rating" value="4" />
+											<label for="star-4cards-carousel-quad-rides" title="rating «4»"></label>
+											<input type="radio" id="star-3cards-carousel-quad-rides" name="rating" value="3" />
+											<label for="star-3cards-carousel-quad-rides" title="rating «3»"></label>
+											<input type="radio" id="star-2cards-carousel-quad-rides" name="rating" value="2" />
+											<label for="star-2cards-carousel-quad-rides" title="rating «2»"></label>
+											<input type="radio" id="star-1cards-carousel-quad-rides" name="rating" value="1" />
+											<label for="star-1cards-carousel-quad-rides" title="rating «1»"></label>
 										</div>
 									</form>
 									<div class="cards-carousel__info-visited-quantity">296 Visited</div>
@@ -262,16 +270,17 @@
 								</div>
 								<div class="cards-carousel-item__info-visited">
 									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="3"><input type="radio" id="star-5" name="rating" value="5">
-											<label for="star-5" title="rating «5»"></label>
-											<input type="radio" id="star-4" name="rating" value="4">
-											<label for="star-4" title="rating «4»"></label>
-											<input type="radio" id="star-3" name="rating" value="3">
-											<label for="star-3" title="rating «3»"></label>
-											<input type="radio" id="star-2" name="rating" value="2">
-											<label for="star-2" title="rating «2»"></label>
-											<input type="radio" id="star-1" name="rating" value="1">
-											<label for="star-1" title="rating «1»"></label>
+										<div class="rating" data-checked="3">
+											<input type="radio" id="star-5cards-carousel-air-tourism" name="rating" value="5" />
+											<label for="star-5cards-carousel-air-tourism" title="rating «5»"></label>
+											<input type="radio" id="star-4cards-carousel-air-tourism" name="rating" value="4" />
+											<label for="star-4cards-carousel-air-tourism" title="rating «4»"></label>
+											<input type="radio" id="star-3cards-carousel-air-tourism" name="rating" value="3" />
+											<label for="star-3cards-carousel-air-tourism" title="rating «3»"></label>
+											<input type="radio" id="star-2cards-carousel-air-tourism" name="rating" value="2" />
+											<label for="star-2cards-carousel-air-tourism" title="rating «2»"></label>
+											<input type="radio" id="star-1cards-carousel-air-tourism" name="rating" value="1" />
+											<label for="star-1cards-carousel-air-tourism" title="rating «1»"></label>
 										</div>
 									</form>
 									<div class="cards-carousel__info-visited-quantity">321 Visited</div>
@@ -287,16 +296,17 @@
 								</div>
 								<div class="cards-carousel-item__info-visited">
 									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="5"><input type="radio" id="star-5" name="rating" value="5">
-											<label for="star-5" title="rating «5»"></label>
-											<input type="radio" id="star-4" name="rating" value="4">
-											<label for="star-4" title="rating «4»"></label>
-											<input type="radio" id="star-3" name="rating" value="3">
-											<label for="star-3" title="rating «3»"></label>
-											<input type="radio" id="star-2" name="rating" value="2">
-											<label for="star-2" title="rating «2»"></label>
-											<input type="radio" id="star-1" name="rating" value="1">
-											<label for="star-1" title="rating «1»"></label>
+										<div class="rating" data-checked="5">
+											<input type="radio" id="star-5cards-carousel-sea-slides" name="rating" value="5" />
+											<label for="star-5cards-carousel-sea-slides" title="rating «5»"></label>
+											<input type="radio" id="star-4cards-carousel-sea-slides" name="rating" value="4" />
+											<label for="star-4cards-carousel-sea-slides" title="rating «4»"></label>
+											<input type="radio" id="star-3cards-carousel-sea-slides" name="rating" value="3" />
+											<label for="star-3cards-carousel-sea-slides" title="rating «3»"></label>
+											<input type="radio" id="star-2cards-carousel-sea-slides" name="rating" value="2" />
+											<label for="star-2cards-carousel-sea-slides" title="rating «2»"></label>
+											<input type="radio" id="star-1cards-carousel-sea-slides" name="rating" value="1" />
+											<label for="star-1cards-carousel-sea-slides" title="rating «1»"></label>
 										</div>
 									</form>
 									<div class="cards-carousel__info-visited-quantity">425 Visited</div>
@@ -312,16 +322,17 @@
 								</div>
 								<div class="cards-carousel-item__info-visited">
 									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="4"><input type="radio" id="star-5" name="rating" value="5">
-											<label for="star-5" title="rating «5»"></label>
-											<input type="radio" id="star-4" name="rating" value="4">
-											<label for="star-4" title="rating «4»"></label>
-											<input type="radio" id="star-3" name="rating" value="3">
-											<label for="star-3" title="rating «3»"></label>
-											<input type="radio" id="star-2" name="rating" value="2">
-											<label for="star-2" title="rating «2»"></label>
-											<input type="radio" id="star-1" name="rating" value="1">
-											<label for="star-1" title="rating «1»"></label>
+										<div class="rating" data-checked="4">
+											<input type="radio" id="star-5cards-carousel-mountain-climbs" name="rating" value="5" />
+											<label for="star-5cards-carousel-mountain-climbs" title="rating «5»"></label>
+											<input type="radio" id="star-4cards-carousel-mountain-climbs" name="rating" value="4" />
+											<label for="star-4cards-carousel-mountain-climbs" title="rating «4»"></label>
+											<input type="radio" id="star-3cards-carousel-mountain-climbs" name="rating" value="3" />
+											<label for="star-3cards-carousel-mountain-climbs" title="rating «3»"></label>
+											<input type="radio" id="star-2cards-carousel-mountain-climbs" name="rating" value="2" />
+											<label for="star-2cards-carousel-mountain-climbs" title="rating «2»"></label>
+											<input type="radio" id="star-1cards-carousel-mountain-climbs" name="rating" value="1" />
+											<label for="star-1cards-carousel-mountain-climbs" title="rating «1»"></label>
 										</div>
 									</form>
 									<div class="cards-carousel__info-visited-quantity">187 Visited</div>
@@ -398,10 +409,12 @@
 						<div class="reviews__nav"><a class="reviews__nav-list" href="#">Reviews <span>(256)</span></a>
 							<div class="reviews__nav-btns">
 								<div class="reviews__nav-btns-dropdown">
-									<button class="reviews__nav-dropdown" type="button">Sort</button>
-									<div class="reviews__nav-btns-dropdown-items">
-										<button class="reviews__nav-dropdown-item" type="button">New</button>
-										<button class="reviews__nav-dropdown-item" type="button">Popular</button>
+									<div class="dropdown-wrap">
+										<button class="dropdown-btn" type="button">Sort</button>
+										<div class="dropdown-btn__items">
+											<button class="dropdown-btn__item" type="button">New</button>
+											<button class="dropdown-btn__item" type="button">Popular</button>
+										</div>
 									</div>
 								</div>
 								<div class="reviews__nav-btns-link"><a class="reviews__nav-link" href="#"><span>Post A Review</span></a></div>
@@ -415,16 +428,17 @@
 										<div class="reviews__list-info-name">Anna Marksson</div>
 										<div class="reviews__list-info-country">Visited Las Vegas</div>
 										<form class="reviews__list-info-rating">
-											<div class="rating" data-checked="5"><input type="radio" id="star-5" name="rating" value="5">
-												<label for="star-5" title="rating «5»"></label>
-												<input type="radio" id="star-4" name="rating" value="4">
-												<label for="star-4" title="rating «4»"></label>
-												<input type="radio" id="star-3" name="rating" value="3">
-												<label for="star-3" title="rating «3»"></label>
-												<input type="radio" id="star-2" name="rating" value="2">
-												<label for="star-2" title="rating «2»"></label>
-												<input type="radio" id="star-1" name="rating" value="1">
-												<label for="star-1" title="rating «1»"></label>
+											<div class="rating" data-checked="5">
+												<input type="radio" id="star-5reviews-annamarksson" name="rating" value="5" />
+												<label for="star-5reviews-annamarksson" title="rating «5»"></label>
+												<input type="radio" id="star-4reviews-annamarksson" name="rating" value="4" />
+												<label for="star-4reviews-annamarksson" title="rating «4»"></label>
+												<input type="radio" id="star-3reviews-annamarksson" name="rating" value="3" />
+												<label for="star-3reviews-annamarksson" title="rating «3»"></label>
+												<input type="radio" id="star-2reviews-annamarksson" name="rating" value="2" />
+												<label for="star-2reviews-annamarksson" title="rating «2»"></label>
+												<input type="radio" id="star-1reviews-annamarksson" name="rating" value="1" />
+												<label for="star-1reviews-annamarksson" title="rating «1»"></label>
 											</div>
 										</form>
 									</div>
@@ -442,16 +456,17 @@
 										<div class="reviews__list-info-name">Edward Signim</div>
 										<div class="reviews__list-info-country">Visited Rome</div>
 										<form class="reviews__list-info-rating">
-											<div class="rating" data-checked="3"><input type="radio" id="star-5" name="rating" value="5">
-												<label for="star-5" title="rating «5»"></label>
-												<input type="radio" id="star-4" name="rating" value="4">
-												<label for="star-4" title="rating «4»"></label>
-												<input type="radio" id="star-3" name="rating" value="3">
-												<label for="star-3" title="rating «3»"></label>
-												<input type="radio" id="star-2" name="rating" value="2">
-												<label for="star-2" title="rating «2»"></label>
-												<input type="radio" id="star-1" name="rating" value="1">
-												<label for="star-1" title="rating «1»"></label>
+											<div class="rating" data-checked="3">
+												<input type="radio" id="star-5reviews-edwardsignim" name="rating" value="5" />
+												<label for="star-5reviews-edwardsignim" title="rating «5»"></label>
+												<input type="radio" id="star-4reviews-edwardsignim" name="rating" value="4" />
+												<label for="star-4reviews-edwardsignim" title="rating «4»"></label>
+												<input type="radio" id="star-3reviews-edwardsignim" name="rating" value="3" />
+												<label for="star-3reviews-edwardsignim" title="rating «3»"></label>
+												<input type="radio" id="star-2reviews-edwardsignim" name="rating" value="2" />
+												<label for="star-2reviews-edwardsignim" title="rating «2»"></label>
+												<input type="radio" id="star-1reviews-edwardsignim" name="rating" value="1" />
+												<label for="star-1reviews-edwardsignim" title="rating «1»"></label>
 											</div>
 										</form>
 									</div>
@@ -469,16 +484,17 @@
 										<div class="reviews__list-info-name">Jenna Miles</div>
 										<div class="reviews__list-info-country">Visited Belgrade</div>
 										<form class="reviews__list-info-rating">
-											<div class="rating" data-checked="4"><input type="radio" id="star-5" name="rating" value="5">
-												<label for="star-5" title="rating «5»"></label>
-												<input type="radio" id="star-4" name="rating" value="4">
-												<label for="star-4" title="rating «4»"></label>
-												<input type="radio" id="star-3" name="rating" value="3">
-												<label for="star-3" title="rating «3»"></label>
-												<input type="radio" id="star-2" name="rating" value="2">
-												<label for="star-2" title="rating «2»"></label>
-												<input type="radio" id="star-1" name="rating" value="1">
-												<label for="star-1" title="rating «1»"></label>
+											<div class="rating" data-checked="4">
+												<input type="radio" id="star-5reviews-jennamiles" name="rating" value="5" />
+												<label for="star-5reviews-jennamiles" title="rating «5»"></label>
+												<input type="radio" id="star-4reviews-jennamiles" name="rating" value="4" />
+												<label for="star-4reviews-jennamiles" title="rating «4»"></label>
+												<input type="radio" id="star-3reviews-jennamiles" name="rating" value="3" />
+												<label for="star-3reviews-jennamiles" title="rating «3»"></label>
+												<input type="radio" id="star-2reviews-jennamiles" name="rating" value="2" />
+												<label for="star-2reviews-jennamiles" title="rating «2»"></label>
+												<input type="radio" id="star-1reviews-jennamiles" name="rating" value="1" />
+												<label for="star-1reviews-jennamiles" title="rating «1»"></label>
 											</div>
 										</form>
 									</div>
@@ -496,16 +512,17 @@
 										<div class="reviews__list-info-name">Jonathan Bright</div>
 										<div class="reviews__list-info-country">Visited Tahiti</div>
 										<form class="reviews__list-info-rating">
-											<div class="rating" data-checked="2"><input type="radio" id="star-5" name="rating" value="5">
-												<label for="star-5" title="rating «5»"></label>
-												<input type="radio" id="star-4" name="rating" value="4">
-												<label for="star-4" title="rating «4»"></label>
-												<input type="radio" id="star-3" name="rating" value="3">
-												<label for="star-3" title="rating «3»"></label>
-												<input type="radio" id="star-2" name="rating" value="2">
-												<label for="star-2" title="rating «2»"></label>
-												<input type="radio" id="star-1" name="rating" value="1">
-												<label for="star-1" title="rating «1»"></label>
+											<div class="rating" data-checked="2">
+												<input type="radio" id="star-5reviews-jonathanbright" name="rating" value="5" />
+												<label for="star-5reviews-jonathanbright" title="rating «5»"></label>
+												<input type="radio" id="star-4reviews-jonathanbright" name="rating" value="4" />
+												<label for="star-4reviews-jonathanbright" title="rating «4»"></label>
+												<input type="radio" id="star-3reviews-jonathanbright" name="rating" value="3" />
+												<label for="star-3reviews-jonathanbright" title="rating «3»"></label>
+												<input type="radio" id="star-2reviews-jonathanbright" name="rating" value="2" />
+												<label for="star-2reviews-jonathanbright" title="rating «2»"></label>
+												<input type="radio" id="star-1reviews-jonathanbright" name="rating" value="1" />
+												<label for="star-1reviews-jonathanbright" title="rating «1»"></label>
 											</div>
 										</form>
 									</div>
@@ -523,8 +540,472 @@
 					</div>
 				</div>
 			</section>
+			<section class="catalog">
+				<div class="catalog__nav">
+					<div class="container">
+						<div class="catalog__nav-wrap">
+							<h5 class="catalog__nav-title">Where do you want to travel today?</h5>
+							<div class="catalog__nav-row">
+								<div class="catalog__nav-meta">
+									<div class="meta">
+										<p class="meta__text">USA</p>
+										<button class="meta__btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M11.000,1.107 L9.892,-0.001 L5.500,4.391 L1.108,-0.001 L-0.001,1.107 L4.392,5.499 L-0.001,9.891 L1.108,10.999 L5.500,6.607 L9.892,10.999 L11.000,9.891 L6.607,5.499 L11.000,1.107 Z" />
+											</svg></button>
+									</div>
+									<div class="meta">
+										<p class="meta__text">New York</p>
+										<button class="meta__btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M11.000,1.107 L9.892,-0.001 L5.500,4.391 L1.108,-0.001 L-0.001,1.107 L4.392,5.499 L-0.001,9.891 L1.108,10.999 L5.500,6.607 L9.892,10.999 L11.000,9.891 L6.607,5.499 L11.000,1.107 Z" />
+											</svg></button>
+									</div>
+									<div class="meta">
+										<p class="meta__text">City Life</p>
+										<button class="meta__btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M11.000,1.107 L9.892,-0.001 L5.500,4.391 L1.108,-0.001 L-0.001,1.107 L4.392,5.499 L-0.001,9.891 L1.108,10.999 L5.500,6.607 L9.892,10.999 L11.000,9.891 L6.607,5.499 L11.000,1.107 Z" />
+											</svg></button>
+									</div>
+									<div class="meta">
+										<p class="meta__text">Cheap</p>
+										<button class="meta__btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="11px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M11.000,1.107 L9.892,-0.001 L5.500,4.391 L1.108,-0.001 L-0.001,1.107 L4.392,5.499 L-0.001,9.891 L1.108,10.999 L5.500,6.607 L9.892,10.999 L11.000,9.891 L6.607,5.499 L11.000,1.107 Z" />
+											</svg></button>
+									</div>
+								</div>
+								<div class="catalog__nav-sort">
+									<input class="catalog-nav-sort-radio" id="catalog-nav-sort-radio-list" type="radio" name="catalog-sort-radio" checked="checked" />
+									<label for="catalog-nav-sort-radio-list">List View</label>
+									<input class="catalog-nav-sort-radio" id="catalog-nav-sort-radio-map" type="radio" name="catalog-sort-radio" />
+									<label for="catalog-nav-sort-radio-map">Map View</label>
+									<div class="catalog__nav-sort-dropdown">
+										<div class="dropdown-wrap">
+											<button class="dropdown-btn" type="button">Sort By</button>
+											<div class="dropdown-btn__items">
+												<button class="dropdown-btn__item" type="button">New</button>
+												<button class="dropdown-btn__item" type="button">Popular</button>
+												<button class="dropdown-btn__item" type="button">History</button>
+												<button class="dropdown-btn__item" type="button">Watch later</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog__content">
+					<div class="container">
+						<div class="catalog__content-wrap">
+							<div class="catalog__content-col">
+								<div class="big-card-catalog">
+									<div class="big-card-catalog__header">
+										<h4 class="big-card-catalog__header-title">New York Skyline Tour The best of New York</h4>
+										<div class="big-card-catalog__header-rating">
+											<div class="rating" data-checked="4">
+												<input type="radio" id="star-5catalog-tour-best" name="rating" value="5" />
+												<label for="star-5catalog-tour-best" title="rating «5»"></label>
+												<input type="radio" id="star-4catalog-tour-best" name="rating" value="4" />
+												<label for="star-4catalog-tour-best" title="rating «4»"></label>
+												<input type="radio" id="star-3catalog-tour-best" name="rating" value="3" />
+												<label for="star-3catalog-tour-best" title="rating «3»"></label>
+												<input type="radio" id="star-2catalog-tour-best" name="rating" value="2" />
+												<label for="star-2catalog-tour-best" title="rating «2»"></label>
+												<input type="radio" id="star-1catalog-tour-best" name="rating" value="1" />
+												<label for="star-1catalog-tour-best" title="rating «1»"></label>
+											</div><span class="big-card-catalog__header-rating-num">292 Reviews</span>
+										</div>
+									</div>
+									<div class="big-card-catalog__img"> <img src="./img/big-card-catalog/01.jpg" alt="big-card-catalog-01" /><span class="big-card-catalog__img-price">$25 </span></div>
+									<div class="big-card-catalog__footer">
+										<div class="big-card-catalog__text">
+											<p>Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour classic buildings, sights and more plus there is a lunch after the tour.</p>
+										</div>
+										<div class="big-card-catalog__links">
+											<div class="spaces-left">
+												<div class="spaces-left__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="24px">
+														<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M23.097,18.232 C16.790,15.796 15.699,14.765 15.512,14.485 L15.512,13.758 C16.220,12.965 16.775,11.944 17.129,10.778 C17.584,10.381 17.886,9.830 17.972,9.227 C18.060,8.605 17.920,7.991 17.575,7.472 L17.575,5.136 C17.575,1.869 15.554,-0.004 12.030,-0.004 C8.557,-0.004 6.484,1.918 6.484,5.136 L6.484,7.472 C6.141,7.991 5.999,8.604 6.088,9.224 C6.174,9.828 6.476,10.381 6.930,10.777 C7.285,11.944 7.839,12.965 8.547,13.758 L8.547,14.486 C8.339,14.809 7.185,15.827 0.963,18.232 C0.386,18.456 -0.002,19.020 -0.002,19.635 L-0.002,22.492 C-0.002,23.323 0.676,23.999 1.510,23.999 L22.550,23.999 C23.384,23.999 24.061,23.323 24.061,22.492 L24.061,19.635 C24.061,19.019 23.673,18.454 23.097,18.232 ZM22.642,22.492 C22.642,22.564 22.594,22.613 22.550,22.613 L1.510,22.613 C1.466,22.613 1.417,22.564 1.417,22.492 L1.485,19.519 C8.468,16.822 9.674,15.673 9.936,14.833 C9.956,14.768 9.966,14.700 9.966,14.632 L9.966,13.490 C9.966,13.311 9.895,13.140 9.769,13.010 C9.085,12.310 8.554,11.338 8.235,10.194 C8.193,10.041 8.097,9.906 7.965,9.814 C7.710,9.635 7.538,9.350 7.493,9.034 C7.447,8.708 7.537,8.385 7.749,8.126 C7.849,8.002 7.903,7.850 7.903,7.694 L7.903,5.136 C7.903,2.680 9.330,1.382 12.030,1.382 C14.768,1.382 16.157,2.645 16.157,5.136 L16.157,7.693 C16.157,7.849 16.211,8.001 16.310,8.124 C16.522,8.385 16.614,8.708 16.567,9.036 C16.521,9.352 16.349,9.635 16.094,9.814 C15.963,9.906 15.867,10.042 15.824,10.195 C15.505,11.338 14.975,12.310 14.290,13.010 C14.164,13.140 14.094,13.311 14.094,13.490 L14.094,14.632 C14.094,14.700 14.105,14.768 14.124,14.834 C14.387,15.675 15.594,16.825 22.642,19.635 L22.642,22.492 Z" />
+													</svg>
+												</div>
+												<div class="spaces-left__number"> <span>121 spaces left</span></div>
+											</div>
+											<button class="form-btn" type="submit"><span>Book Now</span></button>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-menu">
+									<div class="catalog-menu__item hidden">
+										<button class="catalog-nav-btn active" type="button"><span>Language Spoken</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M5.080,0.694 L10.066,3.679 L10.066,6.539 L5.080,3.536 L0.099,6.663 L0.099,3.679 L5.080,0.694 L5.080,0.694 Z" />
+											</svg></button>
+										<div class="catalog-menu__item-body" data-catalog-body="data-catalog-body">
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="language-english" name="language" checked="checked" />
+													<label for="language-english">English</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="language-french" name="language" />
+													<label for="language-french">French</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="language-russian" name="language" />
+													<label for="language-russian">Russian</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-menu__item hidden">
+										<button class="catalog-nav-btn active" type="button"><span>Meal Type</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M5.080,0.694 L10.066,3.679 L10.066,6.539 L5.080,3.536 L0.099,6.663 L0.099,3.679 L5.080,0.694 L5.080,0.694 Z" />
+											</svg></button>
+										<div class="catalog-menu__item-body" data-catalog-body="data-catalog-body">
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="all-inc" name="catalog-inc" checked="checked" />
+													<label for="all-inc">All Inclusive</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="not-all-inc" name="catalog-inc" />
+													<label for="not-all-inc">Not All Inclusive</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-menu__item hidden">
+										<button class="catalog-nav-btn active" type="button"><span>Excursions</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M5.080,0.694 L10.066,3.679 L10.066,6.539 L5.080,3.536 L0.099,6.663 L0.099,3.679 L5.080,0.694 L5.080,0.694 Z" />
+											</svg></button>
+										<div class="catalog-menu__item-body" data-catalog-body="data-catalog-body">
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="air-excursions" name="catalog-excursions" checked="checked" />
+													<label for="air-excursions">Air excursions</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="ship-excursions" name="catalog-excursions" />
+													<label for="ship-excursions">Ship excursions</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="bus-excursions" name="catalog-excursions" />
+													<label for="bus-excursions">Bus excursions</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-menu__item hidden">
+										<button class="catalog-nav-btn active" type="button"><span>Hotel Type</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M5.080,0.694 L10.066,3.679 L10.066,6.539 L5.080,3.536 L0.099,6.663 L0.099,3.679 L5.080,0.694 L5.080,0.694 Z" />
+											</svg></button>
+										<div class="catalog-menu__item-body" data-catalog-body="data-catalog-body">
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="five-stars" name="catalog-hotel-stars" checked="checked" />
+													<label for="five-stars">Five Stars</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="four-stars" name="catalog-hotel-stars" />
+													<label for="four-stars">Four Stars</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="third-stars" name="catalog-hotel-stars" />
+													<label for="third-stars">Third Stars</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="two-stars" name="catalog-hotel-stars" />
+													<label for="two-stars">Two Stars</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-menu__item hidden">
+										<button class="catalog-nav-btn active" type="button"><span>Room Type</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M5.080,0.694 L10.066,3.679 L10.066,6.539 L5.080,3.536 L0.099,6.663 L0.099,3.679 L5.080,0.694 L5.080,0.694 Z" />
+											</svg></button>
+										<div class="catalog-menu__item-body" data-catalog-body="data-catalog-body">
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="third-rooms" name="catalog-room-type" checked="checked" />
+													<label for="third-rooms">Third Rooms</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="two-rooms" name="catalog-room-type" />
+													<label for="two-rooms">Two Rooms</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="one-rooms" name="catalog-room-type" />
+													<label for="one-rooms">One Rooms</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-menu__item hidden">
+										<button class="catalog-nav-btn active" type="button"><span>Rent A Car</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M5.080,0.694 L10.066,3.679 L10.066,6.539 L5.080,3.536 L0.099,6.663 L0.099,3.679 L5.080,0.694 L5.080,0.694 Z" />
+											</svg></button>
+										<div class="catalog-menu__item-body" data-catalog-body="data-catalog-body">
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="rent-car-audi" name="catalog-rent-car" checked="checked" />
+													<label for="rent-car-audi">Audi</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="rent-car-bmw" name="catalog-rent-car" />
+													<label for="rent-car-bmw">BMW</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="rent-car-porshe" name="catalog-rent-car" />
+													<label for="rent-car-porshe">Porshe</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="rent-car-kia" name="catalog-rent-car" />
+													<label for="rent-car-kia">Kia</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="rent-car-opel" name="catalog-rent-car" />
+													<label for="rent-car-opel">Opel</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="rent-car-lada" name="catalog-rent-car" />
+													<label for="rent-car-lada">Lada Granta</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-menu__item hidden">
+										<button class="catalog-nav-btn active" type="button"><span>Shuttle Transport</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M5.080,0.694 L10.066,3.679 L10.066,6.539 L5.080,3.536 L0.099,6.663 L0.099,3.679 L5.080,0.694 L5.080,0.694 Z" />
+											</svg></button>
+										<div class="catalog-menu__item-body" data-catalog-body="data-catalog-body">
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="shuttle-need" name="catalog-shuttle-transport" checked="checked" />
+													<label for="shuttle-need">Need</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="shuttle-no-need" name="catalog-shuttle-transport" />
+													<label for="shuttle-no-need">No need</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-menu__item hidden">
+										<button class="catalog-nav-btn active" type="button"><span>Parking</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+												<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M5.080,0.694 L10.066,3.679 L10.066,6.539 L5.080,3.536 L0.099,6.663 L0.099,3.679 L5.080,0.694 L5.080,0.694 Z" />
+											</svg></button>
+										<div class="catalog-menu__item-body" data-catalog-body="data-catalog-body">
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="parking" name="catalog-parking" checked="checked" />
+													<label for="parking">Parking</label>
+												</div>
+											</div>
+											<div class="catalog-menu__item__body-item">
+												<div class="radio">
+													<input class="catalog-carry-input" type="radio" id="no-parking" name="catalog-parking" />
+													<label for="no-parking">No parking</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__content-col">
+								<div class="big-card-catalog">
+									<div class="big-card-catalog__header">
+										<h4 class="big-card-catalog__header-title">New York Skyline Walking tour</h4>
+										<div class="big-card-catalog__header-rating">
+											<div class="rating" data-checked="5">
+												<input type="radio" id="star-5catalog-tour-walking" name="rating" value="5" />
+												<label for="star-5catalog-tour-walking" title="rating «5»"></label>
+												<input type="radio" id="star-4catalog-tour-walking" name="rating" value="4" />
+												<label for="star-4catalog-tour-walking" title="rating «4»"></label>
+												<input type="radio" id="star-3catalog-tour-walking" name="rating" value="3" />
+												<label for="star-3catalog-tour-walking" title="rating «3»"></label>
+												<input type="radio" id="star-2catalog-tour-walking" name="rating" value="2" />
+												<label for="star-2catalog-tour-walking" title="rating «2»"></label>
+												<input type="radio" id="star-1catalog-tour-walking" name="rating" value="1" />
+												<label for="star-1catalog-tour-walking" title="rating «1»"></label>
+											</div><span class="big-card-catalog__header-rating-num">317 Reviews</span>
+										</div>
+									</div>
+									<div class="big-card-catalog__img"> <img src="./img/big-card-catalog/02.jpg" alt="big-card-catalog-02" /><span class="big-card-catalog__img-price">$15 </span></div>
+									<div class="big-card-catalog__footer">
+										<div class="big-card-catalog__text">
+											<p>Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour classic buildings, sights and more plus there is a lunch after the tour.</p>
+										</div>
+										<div class="big-card-catalog__links">
+											<div class="spaces-left">
+												<div class="spaces-left__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="24px">
+														<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M23.097,18.232 C16.790,15.796 15.699,14.765 15.512,14.485 L15.512,13.758 C16.220,12.965 16.775,11.944 17.129,10.778 C17.584,10.381 17.886,9.830 17.972,9.227 C18.060,8.605 17.920,7.991 17.575,7.472 L17.575,5.136 C17.575,1.869 15.554,-0.004 12.030,-0.004 C8.557,-0.004 6.484,1.918 6.484,5.136 L6.484,7.472 C6.141,7.991 5.999,8.604 6.088,9.224 C6.174,9.828 6.476,10.381 6.930,10.777 C7.285,11.944 7.839,12.965 8.547,13.758 L8.547,14.486 C8.339,14.809 7.185,15.827 0.963,18.232 C0.386,18.456 -0.002,19.020 -0.002,19.635 L-0.002,22.492 C-0.002,23.323 0.676,23.999 1.510,23.999 L22.550,23.999 C23.384,23.999 24.061,23.323 24.061,22.492 L24.061,19.635 C24.061,19.019 23.673,18.454 23.097,18.232 ZM22.642,22.492 C22.642,22.564 22.594,22.613 22.550,22.613 L1.510,22.613 C1.466,22.613 1.417,22.564 1.417,22.492 L1.485,19.519 C8.468,16.822 9.674,15.673 9.936,14.833 C9.956,14.768 9.966,14.700 9.966,14.632 L9.966,13.490 C9.966,13.311 9.895,13.140 9.769,13.010 C9.085,12.310 8.554,11.338 8.235,10.194 C8.193,10.041 8.097,9.906 7.965,9.814 C7.710,9.635 7.538,9.350 7.493,9.034 C7.447,8.708 7.537,8.385 7.749,8.126 C7.849,8.002 7.903,7.850 7.903,7.694 L7.903,5.136 C7.903,2.680 9.330,1.382 12.030,1.382 C14.768,1.382 16.157,2.645 16.157,5.136 L16.157,7.693 C16.157,7.849 16.211,8.001 16.310,8.124 C16.522,8.385 16.614,8.708 16.567,9.036 C16.521,9.352 16.349,9.635 16.094,9.814 C15.963,9.906 15.867,10.042 15.824,10.195 C15.505,11.338 14.975,12.310 14.290,13.010 C14.164,13.140 14.094,13.311 14.094,13.490 L14.094,14.632 C14.094,14.700 14.105,14.768 14.124,14.834 C14.387,15.675 15.594,16.825 22.642,19.635 L22.642,22.492 Z" />
+													</svg>
+												</div>
+												<div class="spaces-left__number"> <span>43 spaces left</span></div>
+											</div>
+											<button class="form-btn" type="submit"><span>Book Now</span></button>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-destination">
+									<button class="catalog-nav-btn" type="button"><span>Destination</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+											<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M5.080,0.694 L10.066,3.679 L10.066,6.539 L5.080,3.536 L0.099,6.663 L0.099,3.679 L5.080,0.694 L5.080,0.694 Z" />
+										</svg></button>
+									<div class="catalog-destination__body" data-catalog-body="data-catalog-body">
+										<input class="catalog-destination__body-radio" type="radio" name="catalog-destination-radio" id="catalog-destination-europe" />
+										<label class="catalog-destination__body-label" for="catalog-destination-europe">Europe</label>
+										<input class="catalog-destination__body-radio" type="radio" name="catalog-destination-radio" id="catalog-destination-asia" />
+										<label class="catalog-destination__body-label" for="catalog-destination-asia">Asia</label>
+										<input class="catalog-destination__body-radio" type="radio" name="catalog-destination-radio" id="catalog-destination-africa" />
+										<label class="catalog-destination__body-label" for="catalog-destination-africa">Africa</label>
+										<input class="catalog-destination__body-radio" type="radio" name="catalog-destination-radio" id="catalog-destination-north-america" />
+										<label class="catalog-destination__body-label" for="catalog-destination-north-america">North America</label>
+										<input class="catalog-destination__body-radio" type="radio" name="catalog-destination-radio" id="catalog-destination-south-america" />
+										<label class="catalog-destination__body-label" for="catalog-destination-south-america">South America</label>
+									</div>
+								</div>
+								<div class="catalog-trip-type">
+									<button class="catalog-nav-btn" type="button"><span>Trip Type</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+											<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M5.080,0.694 L10.066,3.679 L10.066,6.539 L5.080,3.536 L0.099,6.663 L0.099,3.679 L5.080,0.694 L5.080,0.694 Z" />
+										</svg></button>
+									<div class="catalog-trip-type__body" data-catalog-body="data-catalog-body">
+										<div class="catalog-trip-type__body-item">
+											<div class="radio">
+												<input class="catalog-carry-input" type="radio" id="trip-type" name="catalog-trip-type" checked="checked" />
+												<label for="trip-type">Round Trip</label>
+											</div>
+										</div>
+										<div class="catalog-trip-type__body-item">
+											<div class="radio">
+												<input class="catalog-carry-input" type="radio" id="one-way" name="catalog-trip-type" />
+												<label for="one-way">One Way</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-class">
+									<div class="catalog-class__item">
+										<div class="radio">
+											<input class="catalog-carry-input" type="radio" id="catalog-radio-first-class" name="catalog-radio-class" />
+											<label for="catalog-radio-first-class">First Class</label>
+										</div>
+									</div>
+									<div class="catalog-class__item">
+										<div class="radio">
+											<input class="catalog-carry-input" type="radio" id="catalog-radio-business" name="catalog-radio-class" />
+											<label for="catalog-radio-business">Business</label>
+										</div>
+									</div>
+									<div class="catalog-class__item">
+										<div class="radio">
+											<input class="catalog-carry-input" type="radio" id="catalog-radio-coach" name="catalog-radio-class" checked="checked" />
+											<label for="catalog-radio-coach">Coach</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__content-col">
+								<div class="big-card-catalog">
+									<div class="big-card-catalog__header">
+										<h4 class="big-card-catalog__header-title">New York Skyline The Food Tour</h4>
+										<div class="big-card-catalog__header-rating">
+											<div class="rating" data-checked="4">
+												<input type="radio" id="star-5catalog-tour-food" name="rating" value="5" />
+												<label for="star-5catalog-tour-food" title="rating «5»"></label>
+												<input type="radio" id="star-4catalog-tour-food" name="rating" value="4" />
+												<label for="star-4catalog-tour-food" title="rating «4»"></label>
+												<input type="radio" id="star-3catalog-tour-food" name="rating" value="3" />
+												<label for="star-3catalog-tour-food" title="rating «3»"></label>
+												<input type="radio" id="star-2catalog-tour-food" name="rating" value="2" />
+												<label for="star-2catalog-tour-food" title="rating «2»"></label>
+												<input type="radio" id="star-1catalog-tour-food" name="rating" value="1" />
+												<label for="star-1catalog-tour-food" title="rating «1»"></label>
+											</div><span class="big-card-catalog__header-rating-num">146 Reviews</span>
+										</div>
+									</div>
+									<div class="big-card-catalog__img"> <img src="./img/big-card-catalog/03.jpg" alt="big-card-catalog-03" /><span class="big-card-catalog__img-price">$35 </span></div>
+									<div class="big-card-catalog__footer">
+										<div class="big-card-catalog__text">
+											<p>Take a look at New York from above, the best way to see this city. You will find all the classic buildings, sights and more plus there is a lunch after the tour classic buildings, sights and more plus there is a lunch after the tour.</p>
+										</div>
+										<div class="big-card-catalog__links">
+											<div class="spaces-left">
+												<div class="spaces-left__icon">
+													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="24px">
+														<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M23.097,18.232 C16.790,15.796 15.699,14.765 15.512,14.485 L15.512,13.758 C16.220,12.965 16.775,11.944 17.129,10.778 C17.584,10.381 17.886,9.830 17.972,9.227 C18.060,8.605 17.920,7.991 17.575,7.472 L17.575,5.136 C17.575,1.869 15.554,-0.004 12.030,-0.004 C8.557,-0.004 6.484,1.918 6.484,5.136 L6.484,7.472 C6.141,7.991 5.999,8.604 6.088,9.224 C6.174,9.828 6.476,10.381 6.930,10.777 C7.285,11.944 7.839,12.965 8.547,13.758 L8.547,14.486 C8.339,14.809 7.185,15.827 0.963,18.232 C0.386,18.456 -0.002,19.020 -0.002,19.635 L-0.002,22.492 C-0.002,23.323 0.676,23.999 1.510,23.999 L22.550,23.999 C23.384,23.999 24.061,23.323 24.061,22.492 L24.061,19.635 C24.061,19.019 23.673,18.454 23.097,18.232 ZM22.642,22.492 C22.642,22.564 22.594,22.613 22.550,22.613 L1.510,22.613 C1.466,22.613 1.417,22.564 1.417,22.492 L1.485,19.519 C8.468,16.822 9.674,15.673 9.936,14.833 C9.956,14.768 9.966,14.700 9.966,14.632 L9.966,13.490 C9.966,13.311 9.895,13.140 9.769,13.010 C9.085,12.310 8.554,11.338 8.235,10.194 C8.193,10.041 8.097,9.906 7.965,9.814 C7.710,9.635 7.538,9.350 7.493,9.034 C7.447,8.708 7.537,8.385 7.749,8.126 C7.849,8.002 7.903,7.850 7.903,7.694 L7.903,5.136 C7.903,2.680 9.330,1.382 12.030,1.382 C14.768,1.382 16.157,2.645 16.157,5.136 L16.157,7.693 C16.157,7.849 16.211,8.001 16.310,8.124 C16.522,8.385 16.614,8.708 16.567,9.036 C16.521,9.352 16.349,9.635 16.094,9.814 C15.963,9.906 15.867,10.042 15.824,10.195 C15.505,11.338 14.975,12.310 14.290,13.010 C14.164,13.140 14.094,13.311 14.094,13.490 L14.094,14.632 C14.094,14.700 14.105,14.768 14.124,14.834 C14.387,15.675 15.594,16.825 22.642,19.635 L22.642,22.492 Z" />
+													</svg>
+												</div>
+												<div class="spaces-left__number"> <span>423 spaces left</span></div>
+											</div>
+											<button class="form-btn" type="submit"><span>Book Now</span></button>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-question"><a class="catalog-question__link" href="#">Where country you want to go?</a><a class="catalog-question__link" href="#">Where city you want to go?</a></div>
+								<div class="catalog-range">
+									<button class="catalog-nav-btn" type="button"><span>Price Range</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="7px">
+											<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M5.080,0.694 L10.066,3.679 L10.066,6.539 L5.080,3.536 L0.099,6.663 L0.099,3.679 L5.080,0.694 L5.080,0.694 Z" />
+										</svg></button>
+									<div class="catalog-range__body" data-catalog-body="data-catalog-body">
+										<div id="slider-range"></div>
+										<div class="catalog-range__body-input"><input type="text" id="slider-price-number-min" readonly>
+											<input type="text" id="slider-price-number-max" readonly>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-carry">
+									<div class="catalog-carry-item">
+										<div class="radio">
+											<input class="catalog-carry-input" type="radio" id="catalog-carry-radio-without" name="catalog-carry-radio" checked="checked" />
+											<label for="catalog-carry-radio-without">Without Carry On</label>
+										</div>
+									</div>
+									<div class="catalog-carry-item">
+										<div class="radio">
+											<input class="catalog-carry-input" type="radio" id="catalog-carry-radio-with" name="catalog-carry-radio" />
+											<label for="catalog-carry-radio-with">With Carry On</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="map">
-				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5aa6d2f10a44d06d83cc20f0715991374d11619bea23f269b09b0141f0ac3fdd&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1eee1753532ad3c66bdc5daffce9e1fc7f31f78d8cf79fef5e38609995d094bc&amp;amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
 			</section>
 			<section class="banner-video">
 				<div class="container">
@@ -532,9 +1013,9 @@
 						<h3 class="banner-video__title">See Dubai from the sky</h3>
 						<div class="banner-video__item active">
 							<div class="banner-video__item-slide">
-								<button class="banner-video__item-slide-btn" banner-video-remove="banner-video-remove"><img src="./img/video/play.png" alt="play-video" /></button><img src="./img/video/slide.jpg" alt="slide-video" />
+								<button class="banner-video__item-slide-btn" data-video-remove="data-video-remove"><img src="./img/video/play.png" alt="play-video" /></button><img src="./img/video/slide.jpg" alt="slide-video" />
 							</div>
-							<iframe width="700" height="450" src="https://www.youtube.com/embed/GeGRBGDsSDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+							<iframe width="700" height="450" src="https://www.youtube.com/embed/GeGRBGDsSDw" title="YouTube video player" style="border-width:0px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 						</div>
 					</div>
 				</div>
@@ -634,10 +1115,13 @@
 		</footer>
 	</div>
 	<script src="./libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="./libs/jquery/jquery-ui.min.js"> </script>
 	<script src="./js/main.js"></script>
+	<script src="./js/slider-range.js"></script>
 	<script src="./js/carousel.js"></script>
 	<script src="./js/dropdown.js"></script>
 	<script src="./js/stars-raiting.js"></script>
+	<script src="./js/catalog-nav-btn.js"></script>
 	<script src="./libs/owlcarousel/owl.carousel.min.js"></script>
 	<script>
 		jQuery(document).ready(function($) {

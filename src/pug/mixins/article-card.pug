@@ -1,4 +1,4 @@
-mixin article-card(checked, img, alt, title, ratings)
+mixin article-card(checked, star, img, alt, title, ratings)
 	.article__card
 		a(href="#").article__card-link
 		.article__card-img
@@ -12,5 +12,5 @@ mixin article-card(checked, img, alt, title, ratings)
 			else
 		.article__card-rating
 			form.article__card-rating-form
-				+rating(checked)
+				+rating(checked, star)
 			.article__card-rating-visited #{ratings} Ratings
