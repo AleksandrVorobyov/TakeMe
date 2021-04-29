@@ -30,6 +30,9 @@
 							<li class="nav__links-item"><a class="nav__links-link" href="#">Contact Us</a></li>
 							<li class="nav__links-item"><a class="nav__links-link" href="#">Log In</a></li>
 						</ul>
+						<div class="nav__burger-wrap">
+							<button class="nav__burger" type="button"> <span> </span></button><span class="nav__burger-title">Menu</span>
+						</div>
 					</nav>
 				</div>
 			</section>
@@ -182,173 +185,175 @@
 			</section>
 			<section class="cards-carousel">
 				<div class="container rel">
-					<div class="cards-carousel-wrap owl-carousel owl-theme">
-						<div class="cards-carousel-item" data-checked="4">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/01.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
-							<div class="cards-carousel-item__info">
-								<div class="cards-carousel-item__info-text">
-									<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
-									<h4 class="cards-carousel__info-text-subtitle">Sea Voyages</h4>
+					<div class="cards-carousel-wrapper">
+						<div class="cards-carousel-wrap owl-carousel owl-theme">
+							<div class="cards-carousel-item" data-checked="4">
+								<div class="cards-carousel-item__img"><img src="./img/cards-carousel/01.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
+								<div class="cards-carousel-item__info">
+									<div class="cards-carousel-item__info-text">
+										<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
+										<h4 class="cards-carousel__info-text-subtitle">Sea Voyages</h4>
+									</div>
+									<div class="cards-carousel-item__info-visited">
+										<form class="cards-carousel__info-visited-raiting">
+											<div class="rating" data-checked="4">
+												<input type="radio" id="star-5cards-carousel-sea-voyages" name="rating" value="5" />
+												<label for="star-5cards-carousel-sea-voyages" title="rating «5»"></label>
+												<input type="radio" id="star-4cards-carousel-sea-voyages" name="rating" value="4" />
+												<label for="star-4cards-carousel-sea-voyages" title="rating «4»"></label>
+												<input type="radio" id="star-3cards-carousel-sea-voyages" name="rating" value="3" />
+												<label for="star-3cards-carousel-sea-voyages" title="rating «3»"></label>
+												<input type="radio" id="star-2cards-carousel-sea-voyages" name="rating" value="2" />
+												<label for="star-2cards-carousel-sea-voyages" title="rating «2»"></label>
+												<input type="radio" id="star-1cards-carousel-sea-voyages" name="rating" value="1" />
+												<label for="star-1cards-carousel-sea-voyages" title="rating «1»"></label>
+											</div>
+										</form>
+										<div class="cards-carousel__info-visited-quantity">126 Visited</div>
+									</div>
 								</div>
-								<div class="cards-carousel-item__info-visited">
-									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="4">
-											<input type="radio" id="star-5cards-carousel-sea-voyages" name="rating" value="5" />
-											<label for="star-5cards-carousel-sea-voyages" title="rating «5»"></label>
-											<input type="radio" id="star-4cards-carousel-sea-voyages" name="rating" value="4" />
-											<label for="star-4cards-carousel-sea-voyages" title="rating «4»"></label>
-											<input type="radio" id="star-3cards-carousel-sea-voyages" name="rating" value="3" />
-											<label for="star-3cards-carousel-sea-voyages" title="rating «3»"></label>
-											<input type="radio" id="star-2cards-carousel-sea-voyages" name="rating" value="2" />
-											<label for="star-2cards-carousel-sea-voyages" title="rating «2»"></label>
-											<input type="radio" id="star-1cards-carousel-sea-voyages" name="rating" value="1" />
-											<label for="star-1cards-carousel-sea-voyages" title="rating «1»"></label>
-										</div>
-									</form>
-									<div class="cards-carousel__info-visited-quantity">126 Visited</div>
+							</div>
+							<div class="cards-carousel-item" data-checked="3">
+								<div class="cards-carousel-item__img"><img src="./img/cards-carousel/02.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
+								<div class="cards-carousel-item__info">
+									<div class="cards-carousel-item__info-text">
+										<h6 class="cards-carousel__info-text-title">Safe Guides</h6>
+										<h4 class="cards-carousel__info-text-subtitle">Mountain Climbs</h4>
+									</div>
+									<div class="cards-carousel-item__info-visited">
+										<form class="cards-carousel__info-visited-raiting">
+											<div class="rating" data-checked="3">
+												<input type="radio" id="star-5cards-carousel-mountain" name="rating" value="5" />
+												<label for="star-5cards-carousel-mountain" title="rating «5»"></label>
+												<input type="radio" id="star-4cards-carousel-mountain" name="rating" value="4" />
+												<label for="star-4cards-carousel-mountain" title="rating «4»"></label>
+												<input type="radio" id="star-3cards-carousel-mountain" name="rating" value="3" />
+												<label for="star-3cards-carousel-mountain" title="rating «3»"></label>
+												<input type="radio" id="star-2cards-carousel-mountain" name="rating" value="2" />
+												<label for="star-2cards-carousel-mountain" title="rating «2»"></label>
+												<input type="radio" id="star-1cards-carousel-mountain" name="rating" value="1" />
+												<label for="star-1cards-carousel-mountain" title="rating «1»"></label>
+											</div>
+										</form>
+										<div class="cards-carousel__info-visited-quantity">241 Visited</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-carousel-item" data-checked="5">
+								<div class="cards-carousel-item__img"><img src="./img/cards-carousel/03.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
+								<div class="cards-carousel-item__info">
+									<div class="cards-carousel-item__info-text">
+										<h6 class="cards-carousel__info-text-title">Expert Drivers</h6>
+										<h4 class="cards-carousel__info-text-subtitle">Quad Rides</h4>
+									</div>
+									<div class="cards-carousel-item__info-visited">
+										<form class="cards-carousel__info-visited-raiting">
+											<div class="rating" data-checked="5">
+												<input type="radio" id="star-5cards-carousel-quad-rides" name="rating" value="5" />
+												<label for="star-5cards-carousel-quad-rides" title="rating «5»"></label>
+												<input type="radio" id="star-4cards-carousel-quad-rides" name="rating" value="4" />
+												<label for="star-4cards-carousel-quad-rides" title="rating «4»"></label>
+												<input type="radio" id="star-3cards-carousel-quad-rides" name="rating" value="3" />
+												<label for="star-3cards-carousel-quad-rides" title="rating «3»"></label>
+												<input type="radio" id="star-2cards-carousel-quad-rides" name="rating" value="2" />
+												<label for="star-2cards-carousel-quad-rides" title="rating «2»"></label>
+												<input type="radio" id="star-1cards-carousel-quad-rides" name="rating" value="1" />
+												<label for="star-1cards-carousel-quad-rides" title="rating «1»"></label>
+											</div>
+										</form>
+										<div class="cards-carousel__info-visited-quantity">296 Visited</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-carousel-item" data-checked="3">
+								<div class="cards-carousel-item__img"><img src="./img/cards-carousel/04.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
+								<div class="cards-carousel-item__info">
+									<div class="cards-carousel-item__info-text">
+										<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
+										<h4 class="cards-carousel__info-text-subtitle">Air Tourism</h4>
+									</div>
+									<div class="cards-carousel-item__info-visited">
+										<form class="cards-carousel__info-visited-raiting">
+											<div class="rating" data-checked="3">
+												<input type="radio" id="star-5cards-carousel-air-tourism" name="rating" value="5" />
+												<label for="star-5cards-carousel-air-tourism" title="rating «5»"></label>
+												<input type="radio" id="star-4cards-carousel-air-tourism" name="rating" value="4" />
+												<label for="star-4cards-carousel-air-tourism" title="rating «4»"></label>
+												<input type="radio" id="star-3cards-carousel-air-tourism" name="rating" value="3" />
+												<label for="star-3cards-carousel-air-tourism" title="rating «3»"></label>
+												<input type="radio" id="star-2cards-carousel-air-tourism" name="rating" value="2" />
+												<label for="star-2cards-carousel-air-tourism" title="rating «2»"></label>
+												<input type="radio" id="star-1cards-carousel-air-tourism" name="rating" value="1" />
+												<label for="star-1cards-carousel-air-tourism" title="rating «1»"></label>
+											</div>
+										</form>
+										<div class="cards-carousel__info-visited-quantity">321 Visited</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-carousel-item" data-checked="5">
+								<div class="cards-carousel-item__img"><img src="./img/cards-carousel/05.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
+								<div class="cards-carousel-item__info">
+									<div class="cards-carousel-item__info-text">
+										<h6 class="cards-carousel__info-text-title">Safe Guides</h6>
+										<h4 class="cards-carousel__info-text-subtitle">Sea Slides</h4>
+									</div>
+									<div class="cards-carousel-item__info-visited">
+										<form class="cards-carousel__info-visited-raiting">
+											<div class="rating" data-checked="5">
+												<input type="radio" id="star-5cards-carousel-sea-slides" name="rating" value="5" />
+												<label for="star-5cards-carousel-sea-slides" title="rating «5»"></label>
+												<input type="radio" id="star-4cards-carousel-sea-slides" name="rating" value="4" />
+												<label for="star-4cards-carousel-sea-slides" title="rating «4»"></label>
+												<input type="radio" id="star-3cards-carousel-sea-slides" name="rating" value="3" />
+												<label for="star-3cards-carousel-sea-slides" title="rating «3»"></label>
+												<input type="radio" id="star-2cards-carousel-sea-slides" name="rating" value="2" />
+												<label for="star-2cards-carousel-sea-slides" title="rating «2»"></label>
+												<input type="radio" id="star-1cards-carousel-sea-slides" name="rating" value="1" />
+												<label for="star-1cards-carousel-sea-slides" title="rating «1»"></label>
+											</div>
+										</form>
+										<div class="cards-carousel__info-visited-quantity">425 Visited</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-carousel-item" data-checked="4">
+								<div class="cards-carousel-item__img"><img src="./img/cards-carousel/06.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
+								<div class="cards-carousel-item__info">
+									<div class="cards-carousel-item__info-text">
+										<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
+										<h4 class="cards-carousel__info-text-subtitle">Mountain Climbs</h4>
+									</div>
+									<div class="cards-carousel-item__info-visited">
+										<form class="cards-carousel__info-visited-raiting">
+											<div class="rating" data-checked="4">
+												<input type="radio" id="star-5cards-carousel-mountain-climbs" name="rating" value="5" />
+												<label for="star-5cards-carousel-mountain-climbs" title="rating «5»"></label>
+												<input type="radio" id="star-4cards-carousel-mountain-climbs" name="rating" value="4" />
+												<label for="star-4cards-carousel-mountain-climbs" title="rating «4»"></label>
+												<input type="radio" id="star-3cards-carousel-mountain-climbs" name="rating" value="3" />
+												<label for="star-3cards-carousel-mountain-climbs" title="rating «3»"></label>
+												<input type="radio" id="star-2cards-carousel-mountain-climbs" name="rating" value="2" />
+												<label for="star-2cards-carousel-mountain-climbs" title="rating «2»"></label>
+												<input type="radio" id="star-1cards-carousel-mountain-climbs" name="rating" value="1" />
+												<label for="star-1cards-carousel-mountain-climbs" title="rating «1»"></label>
+											</div>
+										</form>
+										<div class="cards-carousel__info-visited-quantity">187 Visited</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="cards-carousel-item" data-checked="3">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/02.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
-							<div class="cards-carousel-item__info">
-								<div class="cards-carousel-item__info-text">
-									<h6 class="cards-carousel__info-text-title">Safe Guides</h6>
-									<h4 class="cards-carousel__info-text-subtitle">Mountain Climbs</h4>
-								</div>
-								<div class="cards-carousel-item__info-visited">
-									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="3">
-											<input type="radio" id="star-5cards-carousel-mountain" name="rating" value="5" />
-											<label for="star-5cards-carousel-mountain" title="rating «5»"></label>
-											<input type="radio" id="star-4cards-carousel-mountain" name="rating" value="4" />
-											<label for="star-4cards-carousel-mountain" title="rating «4»"></label>
-											<input type="radio" id="star-3cards-carousel-mountain" name="rating" value="3" />
-											<label for="star-3cards-carousel-mountain" title="rating «3»"></label>
-											<input type="radio" id="star-2cards-carousel-mountain" name="rating" value="2" />
-											<label for="star-2cards-carousel-mountain" title="rating «2»"></label>
-											<input type="radio" id="star-1cards-carousel-mountain" name="rating" value="1" />
-											<label for="star-1cards-carousel-mountain" title="rating «1»"></label>
-										</div>
-									</form>
-									<div class="cards-carousel__info-visited-quantity">241 Visited</div>
-								</div>
-							</div>
+						<div class="cards-carousel-nav">
+							<button class="cards-carousel-nav-btn cards-carousel-nav-prev">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="27px">
+									<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M0.004,13.383 C0.004,13.166 0.111,12.841 0.326,12.623 L11.093,0.699 C11.524,0.266 12.171,0.266 12.601,0.591 C13.031,1.025 13.031,1.675 12.708,2.109 L2.587,13.383 L12.708,24.549 C13.139,24.983 13.031,25.634 12.601,26.066 C12.171,26.500 11.524,26.392 11.093,25.958 L0.326,14.034 C0.111,13.925 0.004,13.600 0.004,13.383 Z" />
+								</svg></button>
+							<button class="cards-carousel-nav-btn cards-carousel-nav-next">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="27px">
+									<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M12.996,13.383 C12.996,13.166 12.889,12.841 12.674,12.623 L1.907,0.699 C1.476,0.266 0.829,0.266 0.399,0.591 C-0.031,1.025 -0.031,1.675 0.292,2.109 L10.413,13.383 L0.292,24.549 C-0.139,24.983 -0.031,25.634 0.399,26.066 C0.829,26.500 1.476,26.392 1.907,25.958 L12.674,14.034 C12.889,13.925 12.996,13.600 12.996,13.383 Z" />
+								</svg></button>
 						</div>
-						<div class="cards-carousel-item" data-checked="5">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/03.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
-							<div class="cards-carousel-item__info">
-								<div class="cards-carousel-item__info-text">
-									<h6 class="cards-carousel__info-text-title">Expert Drivers</h6>
-									<h4 class="cards-carousel__info-text-subtitle">Quad Rides</h4>
-								</div>
-								<div class="cards-carousel-item__info-visited">
-									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="5">
-											<input type="radio" id="star-5cards-carousel-quad-rides" name="rating" value="5" />
-											<label for="star-5cards-carousel-quad-rides" title="rating «5»"></label>
-											<input type="radio" id="star-4cards-carousel-quad-rides" name="rating" value="4" />
-											<label for="star-4cards-carousel-quad-rides" title="rating «4»"></label>
-											<input type="radio" id="star-3cards-carousel-quad-rides" name="rating" value="3" />
-											<label for="star-3cards-carousel-quad-rides" title="rating «3»"></label>
-											<input type="radio" id="star-2cards-carousel-quad-rides" name="rating" value="2" />
-											<label for="star-2cards-carousel-quad-rides" title="rating «2»"></label>
-											<input type="radio" id="star-1cards-carousel-quad-rides" name="rating" value="1" />
-											<label for="star-1cards-carousel-quad-rides" title="rating «1»"></label>
-										</div>
-									</form>
-									<div class="cards-carousel__info-visited-quantity">296 Visited</div>
-								</div>
-							</div>
-						</div>
-						<div class="cards-carousel-item" data-checked="3">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/04.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
-							<div class="cards-carousel-item__info">
-								<div class="cards-carousel-item__info-text">
-									<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
-									<h4 class="cards-carousel__info-text-subtitle">Air Tourism</h4>
-								</div>
-								<div class="cards-carousel-item__info-visited">
-									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="3">
-											<input type="radio" id="star-5cards-carousel-air-tourism" name="rating" value="5" />
-											<label for="star-5cards-carousel-air-tourism" title="rating «5»"></label>
-											<input type="radio" id="star-4cards-carousel-air-tourism" name="rating" value="4" />
-											<label for="star-4cards-carousel-air-tourism" title="rating «4»"></label>
-											<input type="radio" id="star-3cards-carousel-air-tourism" name="rating" value="3" />
-											<label for="star-3cards-carousel-air-tourism" title="rating «3»"></label>
-											<input type="radio" id="star-2cards-carousel-air-tourism" name="rating" value="2" />
-											<label for="star-2cards-carousel-air-tourism" title="rating «2»"></label>
-											<input type="radio" id="star-1cards-carousel-air-tourism" name="rating" value="1" />
-											<label for="star-1cards-carousel-air-tourism" title="rating «1»"></label>
-										</div>
-									</form>
-									<div class="cards-carousel__info-visited-quantity">321 Visited</div>
-								</div>
-							</div>
-						</div>
-						<div class="cards-carousel-item" data-checked="5">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/05.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
-							<div class="cards-carousel-item__info">
-								<div class="cards-carousel-item__info-text">
-									<h6 class="cards-carousel__info-text-title">Safe Guides</h6>
-									<h4 class="cards-carousel__info-text-subtitle">Sea Slides</h4>
-								</div>
-								<div class="cards-carousel-item__info-visited">
-									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="5">
-											<input type="radio" id="star-5cards-carousel-sea-slides" name="rating" value="5" />
-											<label for="star-5cards-carousel-sea-slides" title="rating «5»"></label>
-											<input type="radio" id="star-4cards-carousel-sea-slides" name="rating" value="4" />
-											<label for="star-4cards-carousel-sea-slides" title="rating «4»"></label>
-											<input type="radio" id="star-3cards-carousel-sea-slides" name="rating" value="3" />
-											<label for="star-3cards-carousel-sea-slides" title="rating «3»"></label>
-											<input type="radio" id="star-2cards-carousel-sea-slides" name="rating" value="2" />
-											<label for="star-2cards-carousel-sea-slides" title="rating «2»"></label>
-											<input type="radio" id="star-1cards-carousel-sea-slides" name="rating" value="1" />
-											<label for="star-1cards-carousel-sea-slides" title="rating «1»"></label>
-										</div>
-									</form>
-									<div class="cards-carousel__info-visited-quantity">425 Visited</div>
-								</div>
-							</div>
-						</div>
-						<div class="cards-carousel-item" data-checked="4">
-							<div class="cards-carousel-item__img"><img src="./img/cards-carousel/06.jpg" alt="cards-carousel-01" /></div><a class="cards-carousel-item__link open" href="#">Open</a>
-							<div class="cards-carousel-item__info">
-								<div class="cards-carousel-item__info-text">
-									<h6 class="cards-carousel__info-text-title">Professional Guides</h6>
-									<h4 class="cards-carousel__info-text-subtitle">Mountain Climbs</h4>
-								</div>
-								<div class="cards-carousel-item__info-visited">
-									<form class="cards-carousel__info-visited-raiting">
-										<div class="rating" data-checked="4">
-											<input type="radio" id="star-5cards-carousel-mountain-climbs" name="rating" value="5" />
-											<label for="star-5cards-carousel-mountain-climbs" title="rating «5»"></label>
-											<input type="radio" id="star-4cards-carousel-mountain-climbs" name="rating" value="4" />
-											<label for="star-4cards-carousel-mountain-climbs" title="rating «4»"></label>
-											<input type="radio" id="star-3cards-carousel-mountain-climbs" name="rating" value="3" />
-											<label for="star-3cards-carousel-mountain-climbs" title="rating «3»"></label>
-											<input type="radio" id="star-2cards-carousel-mountain-climbs" name="rating" value="2" />
-											<label for="star-2cards-carousel-mountain-climbs" title="rating «2»"></label>
-											<input type="radio" id="star-1cards-carousel-mountain-climbs" name="rating" value="1" />
-											<label for="star-1cards-carousel-mountain-climbs" title="rating «1»"></label>
-										</div>
-									</form>
-									<div class="cards-carousel__info-visited-quantity">187 Visited</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="cards-carousel-nav">
-						<button class="cards-carousel-nav-btn cards-carousel-nav-prev">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="27px">
-								<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M0.004,13.383 C0.004,13.166 0.111,12.841 0.326,12.623 L11.093,0.699 C11.524,0.266 12.171,0.266 12.601,0.591 C13.031,1.025 13.031,1.675 12.708,2.109 L2.587,13.383 L12.708,24.549 C13.139,24.983 13.031,25.634 12.601,26.066 C12.171,26.500 11.524,26.392 11.093,25.958 L0.326,14.034 C0.111,13.925 0.004,13.600 0.004,13.383 Z" />
-							</svg></button>
-						<button class="cards-carousel-nav-btn cards-carousel-nav-next">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="27px">
-								<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M12.996,13.383 C12.996,13.166 12.889,12.841 12.674,12.623 L1.907,0.699 C1.476,0.266 0.829,0.266 0.399,0.591 C-0.031,1.025 -0.031,1.675 0.292,2.109 L10.413,13.383 L0.292,24.549 C-0.139,24.983 -0.031,25.634 0.399,26.066 C0.829,26.500 1.476,26.392 1.907,25.958 L12.674,14.034 C12.889,13.925 12.996,13.600 12.996,13.383 Z" />
-							</svg></button>
 					</div>
 				</div>
 			</section>
@@ -392,8 +397,7 @@
 							</div>
 							<div class="contact__form-row">
 								<div class="contact__form-item-big">
-									<h5 class="contact__form-item-title">Message</h5>
-									<textarea class="contact-form-textarea" id="contact-form-text" name="contact-form-text" cols="20" rows="5" placeholder="Your message"> </textarea>
+									<h5 class="contact__form-item-title">Message</h5><textarea id='contact-form-text' class='contact-form-textarea' name="contact-form-text" cols="20" rows="5" placeholder="Your message"></textarea>
 								</div>
 							</div>
 							<div class="contact__form-btn">
@@ -1000,6 +1004,15 @@
 									</div>
 								</div>
 							</div>
+						</div>
+						<div class="catalog__pagination">
+							<div class="catalog__pagination-links"> <a class="catalog__pagination-link" href="#">1 </a><a class="catalog__pagination-link" href="#">2 </a><a class="catalog__pagination-link" href="#">3 </a><a class="catalog__pagination-link" href="#">4 </a><a class="catalog__pagination-link" href="#">5 </a></div>
+							<button class="catalog__pagination-btn catalog__pagination-btn--prev"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="27px">
+									<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M0.004,13.383 C0.004,13.166 0.111,12.841 0.326,12.623 L11.093,0.699 C11.524,0.266 12.171,0.266 12.601,0.591 C13.031,1.025 13.031,1.675 12.708,2.109 L2.587,13.383 L12.708,24.549 C13.139,24.983 13.031,25.634 12.601,26.066 C12.171,26.500 11.524,26.392 11.093,25.958 L0.326,14.034 C0.111,13.924 0.004,13.600 0.004,13.383 Z" />
+								</svg></button>
+							<button class="catalog__pagination-btn catalog__pagination-btn--next"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px" height="27px">
+									<path fill-rule="evenodd" fill="rgb(134, 134, 134)" d="M12.996,13.383 C12.996,13.166 12.889,12.841 12.674,12.623 L1.907,0.699 C1.476,0.266 0.829,0.266 0.399,0.591 C-0.031,1.025 -0.031,1.675 0.292,2.109 L10.413,13.383 L0.292,24.549 C-0.139,24.983 -0.031,25.634 0.399,26.066 C0.829,26.500 1.476,26.392 1.907,25.958 L12.674,14.034 C12.889,13.924 12.996,13.600 12.996,13.383 Z" />
+								</svg></button>
 						</div>
 					</div>
 				</div>

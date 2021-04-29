@@ -9,34 +9,62 @@
 
 .newsletter-wrap {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .newsletter__info {
+  @media (min-width: 720px) {
     max-width: 600px;
+  }
 }
 
 .newsletter__info-title {
-  display: inline-block;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bold;
   font-family: "Roboto-Bold";
   color: rgb(134, 134, 134);
   line-height: 1;
-  text-align: left;
+  text-align: center;
+
+  @media (min-width: 420px) {
+    font-size: 48px;
+  }
+
+  @media (min-width: 720px) {
+    text-align: left;
+  }
 }
 
 .newsletter__info-subtitle {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   font-family: "Roboto-Regular";
   color: rgb(134, 134, 134);
   line-height: 1.2;
-  text-align: left;
+  text-align: center;
+
+  @media (min-width: 420px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 720px) {
+    text-align: left;
+  }
 }
 
 .newsletter__btn {
   width: 270px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  @media (min-width: 1000px) {
+    margin: 0;
+  }
 }

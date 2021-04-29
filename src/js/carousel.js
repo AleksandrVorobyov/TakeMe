@@ -20,11 +20,21 @@ $(document).ready(function(){
     $(".cards-carousel-wrap").owlCarousel({
         nav: false,
         dots: false,
-        items: 3,
         margin: 30,
         smartSpeed: 2000,
         mouseDrag: true,
         touchDrag: true,
+        responsive: {
+            0 : {
+                items: 1,
+            },
+            900 : {
+                items: 2,
+            },
+            1300 : {
+                items: 3,
+            },
+        }
     });
 
     $('.cards-carousel-nav-next').click(function() {
@@ -39,10 +49,21 @@ $(document).ready(function(){
     $(".story__carousel").owlCarousel({
         nav: false,
         dots: true,
-        items: 2,
         margin: 30,
         smartSpeed: 2000,
         mouseDrag: true,
         touchDrag: true,
+
+        responsive: {
+            0: {
+                items: 1,
+            },
+            420: {
+                dotsEach: 2,
+                items: 2,
+                loop: true,
+                autoWidth: true,
+            },
+        }
     });
 });
