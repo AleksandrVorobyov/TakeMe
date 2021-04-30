@@ -9,14 +9,24 @@
 
 .copy-wrap {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-direction: column-reverse;
+
+  @media (min-width: 600px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .copy__table {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
+
+  @media (min-width: 600px) {
+    margin-bottom: 0;
+  }
 }
 
 .copy__table-link {
@@ -62,5 +72,11 @@
 }
 
 .copy__table-item + .copy__table-item {
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+@media (min-width: 420px) {
+  .copy__table-item + .copy__table-item {
+    margin-left: 20px;
+  }
 }

@@ -82,3 +82,15 @@ img {
 .anim-off {
   animation: anim-catalog-body-off 2s forwards 0s;
 }
+
+header {
+  z-index: 2000;
+}
+
+main {
+  z-index: 1000;
+}
+
+footer {
+  z-index: 2000;
+}
