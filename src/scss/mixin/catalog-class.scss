@@ -6,7 +6,12 @@
   background: #fff;
   border-radius: 6px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   min-height: 80px;
+  flex-direction: column;
+  
+  @media (min-width: 420px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
