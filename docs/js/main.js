@@ -56,3 +56,11 @@ spacesLeft.forEach(function (item) {
 });
 
 // ---------------------------------------------------------------------------
+const btnBurger = document.getElementById('btn-burger');
+const sidebar = document.getElementById('sidebar');
+
+btnBurger.addEventListener('click', function() {
+  btnBurger.classList.toggle('active');
+  sidebar.classList.toggle('active');
+  document.querySelector('body').classList.toggle('block-scroll');
+})
