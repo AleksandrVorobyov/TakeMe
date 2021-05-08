@@ -18,9 +18,9 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".cards-carousel-wrap").owlCarousel({
-        nav: false,
         dots: false,
         margin: 30,
+        nav: false,
         smartSpeed: 2000,
         mouseDrag: true,
         touchDrag: true,

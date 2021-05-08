@@ -23,14 +23,22 @@
 
 .catalog__pagination-btn--prev {
   top: 50%;
-  left: 40px;
+  left: 20px;
   transform: translateY(-50%);
+
+  @media (min-width: 420px) {
+    left: 40px;
+  }
 }
 
 .catalog__pagination-btn--next {
   top: 50%;
-  right: 40px;
+  right: 20px;
   transform: translateY(-50%);
+
+  @media (min-width: 420px) {
+    right: 40px;
+  }
 }
 
 .catalog__pagination-link {
@@ -43,5 +51,5 @@
 }
 
 .catalog__pagination-link + .catalog__pagination-link {
-    margin-left: 20px;
+  margin-left: 20px;
 }
